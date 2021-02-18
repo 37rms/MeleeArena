@@ -1,0 +1,133 @@
+waitUntil {player == player};
+waitUntil{!isNull player};
+waituntil {!isnull (finddisplay 46)};
+sleep 6;
+setHitOrDeflect = {
+_unit = _this select 0;
+_unitToPlay = _this select 1;
+_animation = _this select 2;
+_IMS_playerTargetTrigger = createTrigger ["EmptyDetector", getPosATL _unitToPlay, false]; 
+_IMS_playerTargetTrigger setTriggerArea [0.9, 1.7, 0, true]; 
+_IMS_playerTargetTrigger attachTo [_unitToPlay, [0,0.8,0]];
+{ 
+if ((alive _x) and !(_x == _unitToPlay) and (alive _unitToPlay) and (simulationEnabled _unitToPlay) and (animationState _unitToPlay == _animation)) then {
+_isBehindGeometry = lineIntersects [ eyePos _unitToPlay, eyePos _x, _unitToPlay, _x];
+_inTrigger = [_IMS_playerTargetTrigger, _x] call BIS_fnc_inTrigger;
+if ((_isBehindGeometry) or !(_inTrigger)) then {
+}else{
+if (((_unitToPlay worldToModel (_x modelToWorld [0, 0, 0])) select 1) < 0) then 
+{}else{
+_zmFaces = ["RyanZombieFace1","RyanZombieFace2","RyanZombieFace3","RyanZombieFace4","RyanZombieFace5","RyanZombieFace6","RyanZombieFace1_Glowing","RyanZombieFace2_Glowing","RyanZombieFace3_Glowing","RyanZombieFace4_Glowing","RyanZombieFace5_Glowing","RyanZombieFace6_Glowing"];
+if (face _x in _zmFaces) exitWith {
+_arr = parseSimpleArray getText (configFile >> "CfgWeapons" >> handgunWeapon _unitToPlay >> "IMS_Melee_Param_SoundsOnHit");  
+_rndSnd = selectRandom _arr;  
+[_x, _rndSnd, 50, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";  
+_x setDamage 1;
+};
+if ((_x getVariable "actualSwordBlock" == 1)) then {
+if (((_x worldToModel (_unitToPlay modelToWorld [0, 0, 0])) select 1) < 0) then {
+_arr = parseSimpleArray getText (configFile >> "CfgWeapons" >> handgunWeapon _unitToPlay >> "IMS_Melee_Param_SoundsOnHit");  
+_rndSnd = selectRandom _arr;  
+[_x, _rndSnd, 50, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";  
+[_x, _unitToPlay] remoteExec ["createDeathS", _x, false];  
+}else{
+if ((animationState _x == "starWars_force_landRoll") or (animationState _x == "starWars_force_landRoll_b") or (animationState _x == "starWars_landRoll") or (animationState _x == "starWars_landRoll_b")) exitWith {};
+if (hmd _x in IMS_Sheilds) exitWith {
+[_x, _unitToPlay] remoteExec ["concentrationMinus", _x, false];  
+_rndSnd = selectRandom ["sword_on_wood_shield01","sword_on_wood_shield02","sword_on_wood_shield03"];  
+[_x, _rndSnd, 50, 5] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";  
+};
+_arr = parseSimpleArray getText (configFile >> "CfgWeapons" >> handgunWeapon _unitToPlay >> "IMS_Melee_Param_SoundsOnBlock");  
+_rndSnd = selectRandom _arr;  
+[_x, _rndSnd, 50, 5] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";  
+[_x, _unitToPlay] remoteExec ["concentrationMinus", _x, false];  
+_swordSparksobject = "Land_HelipadEmpty_F" createVehicle position _x;
+_swordSparksobject attachTo [_x, [0, 0.6, 0], "head"]; 
+_swordSparks = "#particlesource" createVehicle (getPosATL _swordSparksobject);
+_swordSparks attachTo [_swordSparksobject, [0,0,0]];
+_swordSparks setParticleCircle [0, [0, 0, 0]];
+_swordSparks setParticleRandom [1, [0.05, 0.05, 0.1], [5, 5, 3], 0, 0.0025, [0, 0, 0, 0], 0, 0];
+_swordSparks setParticleParams [["\A3\data_f\proxies\muzzle_flash\muzzle_flash_silencer.p3d", 1, 0, 1], "", "SpaceObject", 1, 1.5, [0, 0, 0], [0, 0, 0], 0, 30, 4.9, 0, [0.2, 0.2, 0.1], [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 0.5]], [0.08], 1, 0, "", "", _swordSparks];
+_swordSparks setDropInterval 0.001;
+sleep 0.1;
+deleteVehicle _swordSparks;
+deleteVehicle _swordSparksobject;
+};
+}else{
+_arr = parseSimpleArray getText (configFile >> "CfgWeapons" >> handgunWeapon _unitToPlay >> "IMS_Melee_Param_SoundsOnHit");  
+_rndSnd = selectRandom _arr;  
+[_x, _rndSnd, 50, 3] execVM "\WebKnight_StarWars_Mechanic\createSoundGlobal.sqf";  
+[_x, _unitToPlay] remoteExec ["createDeathS", _x, false];  
+};
+};
+};
+};
+} forEach nearestObjects [getPosATL  _unitToPlay, ["MAN"], 2.5];
+sleep 1;
+deleteVehicle _IMS_playerTargetTrigger;
+};
+
+params ["_player", "_didJIP"];
+
+lastHeal = -10;
+sounds = ["loganSoundPolibMiPrdel", "loganSoundPolibSiPrdel", "loganSoundVyhulMiPrdel"];
+
+playRandomSound = { 
+	_sound = sounds call BIS_fnc_selectRandom;
+	[(_this select 0), _sound] remoteExec ["say"];
+};
+
+medic_npc addAction["Heal", {
+	if(time - lastHeal > 4) then {
+		[medic_npc, "loganSoundItHurted"] remoteExec ["say"];
+		lastHeal = time;
+		[objNull, player] call ace_medical_treatment_fnc_fullHeal;
+		hint "Úspěšně vyléčen";
+	} else {
+		[medic_npc] call playRandomSound;
+		hint "Heal můžeš použít 1x za 5s";
+	};
+}, [], 1.5, true, true, "", "true", 5];
+
+setMedicAction ={
+	medic_npc addAction["Nastavit medika", {
+	[medic_npc, "loganSoundFajnJakChces"] remoteExec ["say"];
+	hint "Role medika ti byla nastavena";
+	player setVariable ["ace_medical_medicClass", 2, true];
+	medic_npc removeAction (_this select 2);
+	call removeMedicAction;
+ }, [], 1.5, true, true, "", "true", 5];
+};
+
+removeMedicAction ={
+	medic_npc addAction["Odebrat medika", {
+	[medic_npc] call playRandomSound;
+	hint "Role medika ti byla odebrána";
+	player setVariable ["ace_medical_medicClass", 0, true];
+	medic_npc removeAction (_this select 2);
+	call setMedicAction;
+ }, [], 1.5, true, true, "", "true", 5];
+};
+
+setEngineerAction ={
+	engineer_npc addAction["Nastavit engineera", {
+	[engineer_npc, "loganSoundFajnJakChces"] remoteExec ["say"];
+	hint "Role engineera ti byla nastavena";
+	player setVariable ["isEngineer", 2, true];
+	engineer_npc removeAction (_this select 2);
+	call removeEngineerAction;
+ }, [], 1.5, true, true, "", "true", 5];
+};
+
+removeEngineerAction ={
+	engineer_npc addAction["Odebrat engineera", {
+	[engineer_npc] call playRandomSound;
+	hint "Role engineera ti byla odebrána";
+	player setVariable ["isEngineer", 0, true];
+	engineer_npc removeAction (_this select 2);
+	call setEngineerAction;
+ }, [], 1.5, true, true, "", "true", 5];
+};
+
+call setMedicAction;
+call setEngineerAction;
