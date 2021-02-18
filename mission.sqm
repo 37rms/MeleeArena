@@ -8,14 +8,18 @@ class EditorData
 	toggles=37;
 	class ItemIDProvider
 	{
-		nextID=445;
+		nextID=447;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
 	};
 	class Camera
 	{
-		pos[]={3986.7874,19.783886,4905.1318};
-		dir[]={-0.21890424,-0.35987103,0.90708345};
-		up[]={-0.084477276,0.93290859,0.3500587};
-		aside[]={0.9721933,-2.6283851e-006,0.23460944};
+		pos[]={3971.8081,30,4930.27};
+		dir[]={-0.22574788,-0.66547614,0.7114749};
+		up[]={-0.20126593,0.74641734,0.63431668};
+		aside[]={0.9531759,8.7078661e-008,0.30243918};
 	};
 };
 binarizationWanted=0;
@@ -32,13 +36,14 @@ addons[]=
 	"A3_Weapons_F",
 	"fallout_uniform_02",
 	"IA_Armour_Patch_Aftermath",
-	"ace_spectator"
+	"ace_spectator",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			className="AM_Items";
@@ -112,6 +117,13 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item11
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=15163415;
@@ -146,7 +158,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=264;
+		items=266;
 		class Item0
 		{
 			dataType="Object";
@@ -11324,6 +11336,22 @@ class Mission
 			};
 			id=342;
 			type="Land_Props_AM_targetwall";
+		};
+		class Item264
+		{
+			dataType="Marker";
+			position[]={3957.011,5,4955.978};
+			name="meleeArenaSpawn1";
+			type="Empty";
+			id=445;
+		};
+		class Item265
+		{
+			dataType="Marker";
+			position[]={3993.2241,5,4953.5532};
+			name="meleeArenaSpawn2";
+			type="Empty";
+			id=446;
 		};
 	};
 };
