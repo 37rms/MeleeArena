@@ -9,12 +9,20 @@ publicVariable "isArenaEmpty";
 _allPlayers = call BIS_fnc_listPlayers;
 while{count _allPlayers > 0} do {
 	if(isArenaEmpty) then {
-		if(count registeredPlayers < 2) then {
-			["<t valign='top' size='2'>Not enough registered players to start a duel!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText", -2];
+		//TODO: REMOVE DEBUG!
+		if(isDedicated) then {
+			private _neededPlayerCount = 2
+		}
+		else{
+			private _neededPlayerCount = 1;
+		};
+	
+		if(count registeredPlayers < _neededPlayerCount) then {
+			["<t valign='top' size='2'>Not enough registered players to start a duel!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
 		}
 		else {
 			[_firstSpawnpoint, _secondSpawnpoint] call MeleeArena_fnc_initFight;
 		};
 	};
-	sleep 40;
+	sleep 10;
 };

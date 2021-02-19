@@ -10,4 +10,10 @@ class MeleeArena
 	{
 		class registerPlayer {file="functions\fn_registerPlayer.sqf";};
 	};
+	class EventFunctions
+	{
+		class eventOnArsenalClose {file="functions\fn_eventOnArsenalClose.sqf";};
+		class eventOnFightBegin {file="functions\fn_eventOnFightBegin.sqf";};
+		class eventOnFightEnd {file="functions\fn_eventOnFightEnd.sqf";};
+	};
 };

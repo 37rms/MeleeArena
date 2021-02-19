@@ -70,3 +70,4 @@ deleteVehicle _IMS_playerTargetTrigger;
 params ["_player", "_didJIP"];
 
 ["registerNpc"] call MeleeArena_fnc_initRegisterNpc;
+["ace_arsenal_displayClosed", MeleeArena_fnc_eventOnArsenalClose] call CBA_fnc_addEventHandler;

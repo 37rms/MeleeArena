@@ -8,17 +8,12 @@ if (hasInterface) then {
 	
 };
 enableEnvironment[false, true];
-
-systemChat "INIT";
-
 if(isServer) then {
-	systemChat "INIT SERVER";
-
 	registeredPlayers = [];
 	publicVariable "registeredPlayers";
 	
-	_meleeArenaSpawn1Marker = "meleeArenaSpawn1";
-	_meleeArenaSpawn2Marker = "meleeArenaSpawn2";
+	private _meleeArenaSpawn1Marker = "meleeArenaSpawn1";
+	private _meleeArenaSpawn2Marker = "meleeArenaSpawn2";
 	
 	[
 		_meleeArenaSpawn1Marker,

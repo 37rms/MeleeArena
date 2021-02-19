@@ -6,4 +6,7 @@ if(_player in registeredPlayers) exitWith{
 
 registeredPlayers = registeredPlayers + [_player];
 publicVariable "registeredPlayers";
-["<t valign='top' size='2'>"+(name _player)+" just registered into the arena!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText", -2];
+
+if(isArenaEmpty) then {
+	["<t valign='top' size='2'>"+(name _player)+" just registered into the arena!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
+};
