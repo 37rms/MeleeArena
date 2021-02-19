@@ -1,9 +1,14 @@
-author = "JarasonPC";
+class CfgFunctions
+{
+	#include "functions.h"
+};
+
+author = "JarasonPC & shawneeo";
 loadScreen = "loading.jpg";
 overviewPicture = "loading.jpg";
-briefingName = "Swords and Sandals Arena";
-onLoadName = "Swords and Sandals Arena";
-onLoadMission = "huh..";
+briefingName = "Melee Arena";
+onLoadName = "Melee Arena";
+onLoadMission = "WIP";
 
 respawn = 3;
 respawnDelay = 3;
