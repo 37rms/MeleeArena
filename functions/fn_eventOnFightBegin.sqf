@@ -4,6 +4,8 @@ if(isNil{player getVariable "chosenWeapon"}) then {
 else{
 	private _chosenWeapon = player getVariable "chosenWeapon";
 	player addWeapon _chosenWeapon;
+	//TODO: REMOVE
+	player setAmmo [handgunWeapon player, 100000];
 };
 if(isNil{player getVariable "chosenHmd"}) then {
 	private _chosenHmd = nil;
