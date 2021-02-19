@@ -61,6 +61,7 @@ while{count _alivePlayers == 2} do {
 			_alivePlayers = _alivePlayers - [_x];
 		};
 	} forEach _alivePlayers;
+	sleep 0.5;
 };
 
 if(count _alivePlayers == 0) then{
@@ -68,18 +69,14 @@ if(count _alivePlayers == 0) then{
 }
 else{
 	private _alivePlayer = _alivePlayers select 0;
-	_teleportTo = _alivePlayer getVariable "originalPosition";
-	
+
 	["<t valign='top' size='2'>"+(name _alivePlayer)+" wins!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
-	
-	//heal player
-	[objNull, _alivePlayer] call ACE_medical_fnc_treatmentAdvanced_fullHeal;
 	
 	//remove weapon
 	remoteExec ["MeleeArena_fnc_eventOnFightEnd", _alivePlayer];
 	
 	sleep 3;
-	_alivePlayer setPos _teleportTo;
+	_alivePlayer setPos (_alivePlayer getVariable "originalPosition");
 };
 
 isArenaEmpty = true;
