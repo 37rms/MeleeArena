@@ -10,14 +10,7 @@ _allPlayers = call BIS_fnc_listPlayers;
 while{count _allPlayers > 0} do {
 	if(isArenaEmpty) then {
 		//TODO: REMOVE DEBUG!
-		if(isDedicated) then {
-			private _neededPlayerCount = 2
-		}
-		else{
-			private _neededPlayerCount = 1;
-		};
-	
-		if(count registeredPlayers < _neededPlayerCount) then {
+		if(count registeredPlayers < 2) then {
 			["<t valign='top' size='2'>Not enough registered players to start a duel!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
 		}
 		else {
