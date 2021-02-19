@@ -1,6 +1,6 @@
 lastDamageTime = 0;
 
-if (hasinterface) then {
+if (hasInterface) then {
 	waitUntil {!isnull player};
 	player setCustomAimCoef 0.1;
 	player enableFatigue false;
@@ -9,9 +9,19 @@ if (hasinterface) then {
 };
 enableEnvironment[false, true];
 
+systemChat "INIT";
 
-//["<t color='#ff0000' size='5'>Střílíš vlastní, debile!</t>", "PLAIN", -1, true, true] remoteExec ["titleText", 0];
+if(isServer) then {
+	systemChat "INIT SERVER";
 
-if ((!isServer) && (player != player)) then {waitUntil {player == player};};
-
-setViewDistance 500;
+	registeredPlayers = [];
+	publicVariable "registeredPlayers";
+	
+	_meleeArenaSpawn1Marker = "meleeArenaSpawn1";
+	_meleeArenaSpawn2Marker = "meleeArenaSpawn2";
+	
+	[
+		_meleeArenaSpawn1Marker,
+		_meleeArenaSpawn2Marker
+	] call MeleeArena_fnc_initArena;
+};

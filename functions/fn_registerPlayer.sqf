@@ -5,4 +5,5 @@ if(_player in registeredPlayers) exitWith{
 };
 
 registeredPlayers = registeredPlayers + [_player];
-["<t valign='top' size='2'>"+(name _player)+" just registered into the arena!</t>", -1, -0.3] spawn BIS_fnc_dynamicText;
+publicVariable "registeredPlayers";
+["<t valign='top' size='2'>"+(name _player)+" just registered into the arena!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText", -2];
