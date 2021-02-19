@@ -3,7 +3,7 @@ class CfgFunctions
 	#include "functions.h"
 };
 
-author = "JarasonPC & shawneeo";
+author = "JarasonPC & shawneeo & Nicer";
 briefingName = "Melee Arena";
 onLoadName = "Melee Arena";
 onLoadMission = "WIP";
