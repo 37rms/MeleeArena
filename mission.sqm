@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=37;
+	toggles=46;
 	class ItemIDProvider
 	{
 		nextID=1093;
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3976.9749,47.96072,4906.4868};
-		dir[]={0.049321096,-0.344776,0.93751854};
-		up[]={0.018119521,0.938622,0.34442636};
-		aside[]={0.99871314,-2.3653377e-006,-0.052546237};
+		pos[]={3974.5371,18.864185,4904.3608};
+		dir[]={0.85400581,-0.3743324,0.36166686};
+		up[]={0.34481186,0.92720723,0.14602755};
+		aside[]={0.39000541,-1.0262593e-006,-0.92091131};
 	};
 };
 binarizationWanted=0;
@@ -817,8 +817,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3999.5,5.5527701,4926.5};
-				angles[]={0,6.0213861,0};
+				position[]={3996,5.5274544,4913.125};
+				angles[]={0,1.0471978,0};
 			};
 			side="Empty";
 			flags=5;
@@ -834,12 +834,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={3965.375,6.25,4907.625};
-				angles[]={0.037507795,0,6.2572551};
+				position[]={3982.375,6.2500005,4902.5};
 			};
 			id=89;
 			type="ModuleRespawnPosition_F";
-			atlOffset=0.14388847;
+			atlOffset=0.14388895;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3975,7 +3974,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3965.25,4.4682307,4907.75};
+				position[]={3982.25,4.4682307,4902.625};
 				angles[]={0,5.1487222,0};
 			};
 			side="Empty";
@@ -5571,8 +5570,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3995.9038,6.75,4923.9834};
-				angles[]={0,6.0213861,0};
+				position[]={3992.6384,6.7246842,4915.9473};
+				angles[]={0,1.0471978,0};
 			};
 			side="Empty";
 			class Attributes
@@ -5581,7 +5580,7 @@ class Mission
 			};
 			id=1081;
 			type="FactorySafetyPoster8_Fallout4";
-			atlOffset=1.7246842;
+			atlOffset=1.6993685;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5605,8 +5604,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3996.8049,6.096076,4924.4839};
-				angles[]={-0,6.0213861,0};
+				position[]={3993.3552,6.0707603,4915.2065};
+				angles[]={0,1.0471978,0};
 			};
 			side="Empty";
 			flags=4;
@@ -5617,7 +5616,7 @@ class Mission
 			};
 			id=1090;
 			type="Land_alexander";
-			atlOffset=0.16568422;
+			atlOffset=0.14036846;
 		};
 		class Item162
 		{
