@@ -4,8 +4,6 @@ class CfgFunctions
 };
 
 author = "JarasonPC & shawneeo";
-loadScreen = "loading.jpg";
-overviewPicture = "loading.jpg";
 briefingName = "Melee Arena";
 onLoadName = "Melee Arena";
 onLoadMission = "WIP";

@@ -4,6 +4,7 @@ class MeleeArena
 	{
 		class initArena {file="functions\fn_initArena.sqf";};
 		class initRegisterNpc {file="functions\fn_initRegisterNpc.sqf";};
+		class initFight {file="functions\fn_initFight.sqf";};
 	};
 	class RegistrationFunctions
 	{
