@@ -2,6 +2,7 @@ waitUntil {player == player};
 waitUntil{!isNull player};
 waituntil {!isnull (finddisplay 46)};
 sleep 6;
+[getPlayerUID player] remoteExec ["MeleeArena_fnc_addPlayerToList", 2];
 setHitOrDeflect = {
 _unit = _this select 0;
 _unitToPlay = _this select 1;

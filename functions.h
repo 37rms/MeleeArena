@@ -16,4 +16,9 @@ class MeleeArena
 		class eventOnFightBegin {file="functions\fn_eventOnFightBegin.sqf";};
 		class eventOnFightEnd {file="functions\fn_eventOnFightEnd.sqf";};
 	};
+	class ListFunctions
+	{
+		class addPlayerToList {file="functions\fn_addPlayerToList.sqf";};
+		class removePlayerFromList {file="functions\fn_removePlayerFromList.sqf";};
+	};
 };
