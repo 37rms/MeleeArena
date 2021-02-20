@@ -5,8 +5,10 @@ else{
 	private _chosenWeapon = player getVariable "chosenWeapon";
 	player addWeapon _chosenWeapon;
 	//TODO: REMOVE
-	_magazines = getArray (configFile >> "CfgWeapons" >> _chosenWeapon >> "magazines");
-	for "_i" from 1 to 2 do {player addMagazine (_magazines select 0);};
+	private _magazines = getArray (configFile >> "CfgWeapons" >> _chosenWeapon >> "magazines");
+	private _magazine = _magazines select 0;
+	player addMagazine _magazine;
+	player addHandgunItem _magazine;
 };
 if(isNil{player getVariable "chosenHmd"}) then {
 	private _chosenHmd = nil;
