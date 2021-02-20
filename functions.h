@@ -9,6 +9,8 @@ class MeleeArena
 	class RegistrationFunctions
 	{
 		class registerPlayer {file="functions\fn_registerPlayer.sqf";};
+		class unregisterPlayer {file="functions\fn_unregisterPlayer.sqf";};
+		class showRegisterAction {file="functions\fn_showRegisterAction.sqf";};
 	};
 	class EventFunctions
 	{
