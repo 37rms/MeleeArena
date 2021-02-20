@@ -20,3 +20,4 @@ respawnOnStart = 1;
 disabledAI = 1;
 joinUnassigned = 1;
 aiKills = 1;
+enableDebugConsole = 2;
