@@ -18,3 +18,4 @@ else{
 	player addItem _chosenHmd;
 	player assignItem _chosenHmd;
 };
+player allowDamage true;

@@ -116,11 +116,11 @@ else{
 
 	["<t valign='top' size='2'>"+(name _alivePlayer)+" wins!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
 	
-	//remove weapon
-	remoteExec ["MeleeArena_fnc_eventOnFightEnd", _alivePlayer];
-	
 	sleep 3;
 	_alivePlayer setPosASL (_alivePlayer getVariable "originalPosition");
+	
+	//remove weapon
+	remoteExec ["MeleeArena_fnc_eventOnFightEnd", _alivePlayer];
 };
 
 isArenaEmpty = true;

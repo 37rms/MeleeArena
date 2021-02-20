@@ -6,3 +6,4 @@ if(_chosenHmd != "") then {
 	player unassignItem _chosenHmd;
 	player removeItem _chosenHmd;
 };
+player allowDamage false;
