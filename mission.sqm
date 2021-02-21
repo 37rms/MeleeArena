@@ -8,7 +8,7 @@ class EditorData
 	toggles=46;
 	class ItemIDProvider
 	{
-		nextID=1112;
+		nextID=1118;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3958.0059,46.90292,4840.0288};
-		dir[]={0.18025401,-0.74620837,0.64086705};
-		up[]={0.20207243,0.66559118,0.71843857};
-		aside[]={0.96266121,7.0920214e-007,-0.27076203};
+		pos[]={4032.4983,23.754238,4984.8398};
+		dir[]={-0.61738241,-0.65776861,-0.43156931};
+		up[]={-0.53922498,0.75309432,-0.37693551};
+		aside[]={-0.57294804,9.8830787e-007,0.819628};
 	};
 };
 binarizationWanted=0;
@@ -7913,76 +7913,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3979.5,6.6321864,4951.5};
-				angles[]={0,0.52359879,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1105;
-			type="Props_AM_junkwall03";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item156
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3983.375,6.6321864,4949.625};
-				angles[]={0,2.0943952,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1106;
-			type="Props_AM_junkwall03";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item157
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={3990.5,6.6321864,4956.625};
 				angles[]={0,3.1415927,0};
 			};
@@ -8013,77 +7943,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item158
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3980.25,6.6321864,4966.375};
-				angles[]={0,3.141593,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1108;
-			type="Props_AM_junkwall03";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item159
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3976.875,6.6321864,4960.875};
-				angles[]={0,1.5707964,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1109;
-			type="Props_AM_junkwall03";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item160
+		class Item156
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8118,7 +7978,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item161
+		class Item157
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8152,6 +8012,69 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item158
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3979.75,6.5185471,4950.125};
+				angles[]={0,0.52359879,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1114;
+			type="Props_AM_junkwall04";
+		};
+		class Item159
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3977,6.6321864,4960.875};
+				angles[]={0,1.5707964,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1115;
+			type="Props_AM_junkwall02";
+		};
+		class Item160
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3984.875,6.6321864,4950.875};
+				angles[]={0,5.2359877,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1116;
+			type="Props_AM_junkwall03";
+		};
+		class Item161
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3979.375,6.5185471,4966.375};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1117;
+			type="Props_AM_junkwall04";
 		};
 	};
 };
