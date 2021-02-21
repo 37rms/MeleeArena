@@ -1,7 +1,7 @@
 private _controlId = false;
 private _display = false;
 if(isNil{player getVariable "playerDisplayControlId";}) then {
-	_display = findDisplay 46 ctrlCreate ["RscStructuredText", 42069];
+	_display = findDisplay 46 ctrlCreate ["RscStructuredText", (random 100) + 550];
 	player setVariable ["playerDisplayControlId", ctrlIDC _display];
 	_display ctrlSetBackgroundColor [0, 0, 0, 0.1];
 	_display ctrlCommit 0;
