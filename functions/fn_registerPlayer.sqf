@@ -8,7 +8,4 @@ if(_playerUid in registeredPlayers) exitWith{
 registeredPlayers = registeredPlayers + [_playerUid];
 publicVariable "registeredPlayers";
 
-if(isArenaEmpty) then {
-	["<t valign='top' size='2'>"+(name _player)+" just registered into the arena!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
-};
-[] remoteExec ["MeleeArena_fnc_showRegisterAction", _player];
+[] remoteExec ["MeleeArena_fnc_updatePlayerListDisplay"];

@@ -18,4 +18,3 @@ else{
 	player addItem _chosenHmd;
 	player assignItem _chosenHmd;
 };
-player removeAction ActionId;

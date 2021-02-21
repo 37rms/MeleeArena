@@ -3,7 +3,6 @@ class MeleeArena
 	class InitializationFunctions
 	{
 		class initArena {file="functions\fn_initArena.sqf";};
-		class initRegisterNpc {file="functions\fn_initRegisterNpc.sqf";};
 		class initFight {file="functions\fn_initFight.sqf";};
 	};
 	class RegistrationFunctions
@@ -11,6 +10,7 @@ class MeleeArena
 		class registerPlayer {file="functions\fn_registerPlayer.sqf";};
 		class unregisterPlayer {file="functions\fn_unregisterPlayer.sqf";};
 		class showRegisterAction {file="functions\fn_showRegisterAction.sqf";};
+		class showUnregisterAction {file="functions\fn_showUnregisterAction.sqf";};
 	};
 	class EventFunctions
 	{
@@ -22,5 +22,9 @@ class MeleeArena
 	{
 		class addPlayerToList {file="functions\fn_addPlayerToList.sqf";};
 		class removePlayerFromList {file="functions\fn_removePlayerFromList.sqf";};
+	};
+	class DisplayFunctions
+	{
+		class updatePlayerListDisplay {file="functions\fn_updatePlayerListDisplay.sqf";};
 	};
 };
