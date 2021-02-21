@@ -16,3 +16,14 @@ jobs:
         name: Validate with SQFLint
         with:
           args: --exit w --directory /
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - name: Build with HEMTT
+        uses: arma-actions/hemtt@master
+        with:
+          command: build --release --ci
