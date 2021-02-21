@@ -12,3 +12,7 @@ if(_chosenHmd != "") then {
 	player unassignItem _chosenHmd;
 	player removeItem _chosenHmd;
 };
+private _wasPlayerRegistered = player getVariable "wasPlayerRegistered";
+if(_wasPlayerRegistered) then {
+	[player] remoteExec ["MeleeArena_fnc_registerPlayer"];
+};

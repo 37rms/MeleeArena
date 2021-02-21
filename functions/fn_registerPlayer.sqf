@@ -1,8 +1,12 @@
 params ["_player"];
-private _playerUid = getPlayerUID _player;
+private _playerUid = objNull;
+if(!isServer) exitWith{};
 
-if(_playerUid in registeredPlayers) exitWith{
-	["<t valign='top' size='2' color='#FF0000'>You are already registered!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText", _player];
+if(typeName _player == "OBJECT") then{
+	_playerUid = getPlayerUID _player;
+}
+else{
+	_playerUid = _player;
 };
 
 registeredPlayers = registeredPlayers + [_playerUid];

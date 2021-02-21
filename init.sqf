@@ -6,10 +6,6 @@ if (hasInterface) then {
 	player enableFatigue false;
 	player enableStamina false;
 	remoteExec ["MeleeArena_fnc_eventOnFightEnd", player];
-	
-	//Because WebKnight said so (melee system inits after a second so we need a delay)
-	sleep 2;
-	IMS_ISBluntWeaponKiils = true;
 };
 enableEnvironment[false, true];
 if(isServer) then {
