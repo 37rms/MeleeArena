@@ -5,13 +5,6 @@ params ["_firstSpawnpoint", "_secondSpawnpoint"];
 isArenaEmpty = false;
 publicVariable "isArenaEmpty";
 
-//CLOSE ARSENAL
-{
-	if(ctrlIDD _x > 555) then{
-		_x closeDisplay 2;
-	};
-} forEach allDisplays;
-
 private _uids = [];
 private _weights = [];
 
