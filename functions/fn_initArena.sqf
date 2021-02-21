@@ -13,7 +13,12 @@ while{count _allPlayers > 0} do {
 	if(isArenaEmpty) then {
 		//TODO: REMOVE DEBUG!
 		private _aliveRegistered = _allPlayers select { alive _x && getPlayerUID _x in registeredPlayers};
-		if(count _aliveRegistered < 2) then {
+		AliveRegistered = [];
+		{
+			AliveRegistered pushBack (getPlayerUID _x);
+			
+		} forEach _aliveRegistered;
+		if(count AliveRegistered < 2) then {
 			["<t valign='top' size='2'>Not enough of alive registered players to start a duel!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
 		}
 		else {

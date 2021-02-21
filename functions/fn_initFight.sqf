@@ -15,13 +15,8 @@ publicVariable "isArenaEmpty";
 private _uids = [];
 private _weights = [];
 
-private _allPlayers = call BIS_fnc_listPlayers;
-
-private _aliveRegistered = _allPlayers select { alive _x && getPlayerUID _x in registeredPlayers};
-
-
 [PlayerList, {
-	if (_key in _aliveRegistered) then {
+	if (_key in AliveRegistered) then {
 		_uids set [count _uids, _key];
 		_weights set [count _weights, _value];
 	};
@@ -36,12 +31,10 @@ _weights deleteAt _index;
 private _players = call BIS_fnc_listPlayers;
 private _firstPlayerObject = ((_players select {getPlayerUID _x isEqualTo _firstPlayer}) select 0);
 
-//registeredPlayers = registeredPlayers - [_firstPlayer];
 
 private _secondPlayer = _uids selectRandomWeighted _weights;
 private _secondPlayerObject = ((_players select {getPlayerUID _x isEqualTo _secondPlayer}) select 0);
 
-//registeredPlayers = registeredPlayers - [_secondPlayer];
 
 private _firstPlayerWeight = [PlayerList, _firstPlayer] call CBA_fnc_hashGet;
 if (_firstPlayerWeight > 0.1) then {
@@ -105,7 +98,6 @@ sleep 1;
 while{count _alivePlayers == 2} do {
 	{
 		if(!alive _x) then {
-			remoteExec ["MeleeArena_fnc_showRegisterAction", _x];
 			_alivePlayers = _alivePlayers - [_x];
 		};
 	} forEach _alivePlayers;
