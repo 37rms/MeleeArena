@@ -6,4 +6,5 @@ if(_chosenHmd != "") then {
 	player unassignItem _chosenHmd;
 	player removeItem _chosenHmd;
 };
+call MeleeArena_fnc_showRegisterAction;
 player allowDamage false;

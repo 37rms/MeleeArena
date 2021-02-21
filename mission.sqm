@@ -8,7 +8,7 @@ class EditorData
 	toggles=46;
 	class ItemIDProvider
 	{
-		nextID=1112;
+		nextID=1118;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=11;
+		nextID=14;
 	};
 	class Camera
 	{
-		pos[]={4003.6458,29.69145,4946.8076};
-		dir[]={-0.78205067,-0.60885477,0.1339884};
-		up[]={-0.60017395,0.79319108,0.10282655};
-		aside[]={0.16888359,-1.2751261e-006,0.98572481};
+		pos[]={4032.4983,23.754238,4984.8398};
+		dir[]={-0.61738241,-0.65776861,-0.43156931};
+		up[]={-0.53922498,0.75309432,-0.37693551};
+		aside[]={-0.57294804,9.8830787e-007,0.819628};
 	};
 };
 binarizationWanted=0;
@@ -5246,7 +5246,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3997.625,7.0636702,4906.25};
+				position[]={3997.5,7.0383539,4905.5};
 				angles[]={0,2.8797936,0};
 			};
 			side="Empty";
@@ -5257,7 +5257,6 @@ class Mission
 			};
 			id=342;
 			type="Land_Props_AM_targetwall";
-			atlOffset=4.7683716e-007;
 		};
 		class Item139
 		{
@@ -5416,7 +5415,7 @@ class Mission
 										singleType="ARRAY";
 										class value
 										{
-											items=255;
+											items=252;
 											class Item0
 											{
 												class data
@@ -5534,7 +5533,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="AM_WBK_Ripper";
+													value="AM_WBK_HatchetThrowing";
 												};
 											};
 											class Item15
@@ -5542,7 +5541,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="AM_WBK_RipperHB";
+													value="AM_WBK_StraighRazor";
 												};
 											};
 											class Item16
@@ -5550,7 +5549,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="AM_WBK_RipperSM";
+													value="AM_WBK_Figaro";
 												};
 											};
 											class Item17
@@ -5558,7 +5557,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="AM_WBK_HatchetThrowing";
+													value="AM_WBK_switchblade";
 												};
 											};
 											class Item18
@@ -5566,7 +5565,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="AM_WBK_StraighRazor";
+													value="AM_WBK_ThrowingKnife";
 												};
 											};
 											class Item19
@@ -5574,7 +5573,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="AM_WBK_Figaro";
+													value="AM_WBK_TireIron";
 												};
 											};
 											class Item20
@@ -5582,7 +5581,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="AM_WBK_switchblade";
+													value="boomer_02_uniform";
 												};
 											};
 											class Item21
@@ -5590,7 +5589,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="AM_WBK_ThrowingKnife";
+													value="powdergang_03_uniform";
 												};
 											};
 											class Item22
@@ -5598,7 +5597,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="AM_WBK_TireIron";
+													value="powdergang_02_uniform";
 												};
 											};
 											class Item23
@@ -5606,7 +5605,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="boomer_02_uniform";
+													value="bosunderarmor_uniform";
 												};
 											};
 											class Item24
@@ -5614,7 +5613,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="powdergang_03_uniform";
+													value="1950stylesuit_outfit_benny_uniform";
 												};
 											};
 											class Item25
@@ -5622,7 +5621,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="powdergang_02_uniform";
+													value="combatarmor_rivetcitysecurity_uniform";
 												};
 											};
 											class Item26
@@ -5630,7 +5629,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="bosunderarmor_uniform";
+													value="republican_01_uniform";
 												};
 											};
 											class Item27
@@ -5638,7 +5637,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylesuit_outfit_benny_uniform";
+													value="combatarmor_uniform";
 												};
 											};
 											class Item28
@@ -5646,7 +5645,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_rivetcitysecurity_uniform";
+													value="1950stylesuit_outfit03_uniform";
 												};
 											};
 											class Item29
@@ -5654,7 +5653,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="republican_01_uniform";
+													value="lucassimms_ncr_uniform";
 												};
 											};
 											class Item30
@@ -5662,7 +5661,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_uniform";
+													value="petrochico_01_07_uniform";
 												};
 											};
 											class Item31
@@ -5670,7 +5669,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylesuit_outfit03_uniform";
+													value="petrochico_01_04_uniform";
 												};
 											};
 											class Item32
@@ -5678,7 +5677,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="lucassimms_ncr_uniform";
+													value="petrochico_01_03_uniform";
 												};
 											};
 											class Item33
@@ -5686,7 +5685,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="petrochico_01_07_uniform";
+													value="petrochico_01_02_uniform";
 												};
 											};
 											class Item34
@@ -5694,7 +5693,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="petrochico_01_04_uniform";
+													value="petrochico_01_05_uniform";
 												};
 											};
 											class Item35
@@ -5702,7 +5701,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="petrochico_01_03_uniform";
+													value="petrochico_01_06_uniform";
 												};
 											};
 											class Item36
@@ -5710,7 +5709,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="petrochico_01_02_uniform";
+													value="republican_02_uniform";
 												};
 											};
 											class Item37
@@ -5718,7 +5717,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="petrochico_01_05_uniform";
+													value="1950stylesuit_outfit01_uniform";
 												};
 											};
 											class Item38
@@ -5726,7 +5725,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="petrochico_01_06_uniform";
+													value="jgraham_uniform";
 												};
 											};
 											class Item39
@@ -5734,7 +5733,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="republican_02_uniform";
+													value="leatherarmor_01_uniform";
 												};
 											};
 											class Item40
@@ -5742,7 +5741,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylesuit_outfit01_uniform";
+													value="1950stylecasual01_uniform";
 												};
 											};
 											class Item41
@@ -5750,7 +5749,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="jgraham_uniform";
+													value="1950stylecasual01_mold_uniform";
 												};
 											};
 											class Item42
@@ -5758,7 +5757,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="leatherarmor_01_uniform";
+													value="1950stylecasual04_uniform";
 												};
 											};
 											class Item43
@@ -5766,7 +5765,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylecasual01_uniform";
+													value="1950stylecasual04_mold_uniform";
 												};
 											};
 											class Item44
@@ -5774,7 +5773,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylecasual01_mold_uniform";
+													value="1950stylecasual02_uniform";
 												};
 											};
 											class Item45
@@ -5782,7 +5781,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylecasual04_uniform";
+													value="1950stylecasual02_mold_uniform";
 												};
 											};
 											class Item46
@@ -5790,7 +5789,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylecasual04_mold_uniform";
+													value="1950stylecasual03_uniform";
 												};
 											};
 											class Item47
@@ -5798,7 +5797,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylecasual02_uniform";
+													value="1950stylecasual03_mold_uniform";
 												};
 											};
 											class Item48
@@ -5806,7 +5805,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylecasual02_mold_uniform";
+													value="republican_04_uniform";
 												};
 											};
 											class Item49
@@ -5814,7 +5813,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylecasual03_uniform";
+													value="radiationsuit_uniform";
 												};
 											};
 											class Item50
@@ -5822,7 +5821,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylecasual03_mold_uniform";
+													value="combatarmor_rileysranger_uniform";
 												};
 											};
 											class Item51
@@ -5830,7 +5829,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="republican_04_uniform";
+													value="wastelandmerchant01_uniform";
 												};
 											};
 											class Item52
@@ -5838,7 +5837,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="radiationsuit_uniform";
+													value="republican_03_uniform";
 												};
 											};
 											class Item53
@@ -5846,7 +5845,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_rileysranger_uniform";
+													value="lucassimms_uniform";
 												};
 											};
 											class Item54
@@ -5854,7 +5853,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="wastelandmerchant01_uniform";
+													value="stealthsuit_uniform";
 												};
 											};
 											class Item55
@@ -5862,7 +5861,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="republican_03_uniform";
+													value="stealthsuit_02_uniform";
 												};
 											};
 											class Item56
@@ -5870,7 +5869,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="lucassimms_uniform";
+													value="combatarmor_taloncompanym_uniform";
 												};
 											};
 											class Item57
@@ -5878,7 +5877,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="stealthsuit_uniform";
+													value="combatarmor_usmilitary_uniform";
 												};
 											};
 											class Item58
@@ -5886,7 +5885,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="stealthsuit_02_uniform";
+													value="wasteland_doctor_01_uniform";
 												};
 											};
 											class Item59
@@ -5894,7 +5893,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_taloncompanym_uniform";
+													value="wastelandsettler03_uniform";
 												};
 											};
 											class Item60
@@ -5902,7 +5901,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_usmilitary_uniform";
+													value="wasteland_doctor_02_uniform";
 												};
 											};
 											class Item61
@@ -5910,7 +5909,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="wasteland_doctor_01_uniform";
+													value="wastelandsettler02_uniform";
 												};
 											};
 											class Item62
@@ -5918,7 +5917,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="wastelandsettler03_uniform";
+													value="centurion_uniform";
 												};
 											};
 											class Item63
@@ -5926,7 +5925,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="wasteland_doctor_02_uniform";
+													value="caesar_uniform";
 												};
 											};
 											class Item64
@@ -5934,7 +5933,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="wastelandsettler02_uniform";
+													value="legionexplorer_uniform";
 												};
 											};
 											class Item65
@@ -5942,7 +5941,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="centurion_uniform";
+													value="legate_armor_uniform";
 												};
 											};
 											class Item66
@@ -5950,7 +5949,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="caesar_uniform";
+													value="legionpretorian_uniform";
 												};
 											};
 											class Item67
@@ -5958,7 +5957,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionexplorer_uniform";
+													value="legionprime_uniform";
 												};
 											};
 											class Item68
@@ -5966,7 +5965,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legate_armor_uniform";
+													value="legion_recruit_uniform";
 												};
 											};
 											class Item69
@@ -5974,7 +5973,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionpretorian_uniform";
+													value="legionveteran_uniform";
 												};
 											};
 											class Item70
@@ -5982,7 +5981,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionprime_uniform";
+													value="legionvexillarius_uniform";
 												};
 											};
 											class Item71
@@ -5990,7 +5989,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legion_recruit_uniform";
+													value="chinesecommando_general_uniform";
 												};
 											};
 											class Item72
@@ -5998,7 +5997,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionveteran_uniform";
+													value="chinesecommando_02_uniform";
 												};
 											};
 											class Item73
@@ -6006,7 +6005,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionvexillarius_uniform";
+													value="chinesecommando_03_uniform";
 												};
 											};
 											class Item74
@@ -6014,7 +6013,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="chinesecommando_general_uniform";
+													value="chinesestealtharmor_uniform";
 												};
 											};
 											class Item75
@@ -6022,7 +6021,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="chinesecommando_02_uniform";
+													value="chinesecommando_uniform";
 												};
 											};
 											class Item76
@@ -6030,7 +6029,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="chinesecommando_03_uniform";
+													value="colonelautumn_uniform";
 												};
 											};
 											class Item77
@@ -6038,7 +6037,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="chinesestealtharmor_uniform";
+													value="colonelautumn_enclave_uniform";
 												};
 											};
 											class Item78
@@ -6046,7 +6045,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="chinesecommando_uniform";
+													value="combatarmor_enclave_uniform";
 												};
 											};
 											class Item79
@@ -6054,7 +6053,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="colonelautumn_uniform";
+													value="engineer_enclave_black_uniform";
 												};
 											};
 											class Item80
@@ -6062,7 +6061,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="colonelautumn_enclave_uniform";
+													value="enclave_officer_uniform";
 												};
 											};
 											class Item81
@@ -6070,7 +6069,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_enclave_uniform";
+													value="enclave_officer2_uniform";
 												};
 											};
 											class Item82
@@ -6078,7 +6077,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="engineer_enclave_black_uniform";
+													value="radiationsuit_enclave_uniform";
 												};
 											};
 											class Item83
@@ -6086,7 +6085,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="enclave_officer_uniform";
+													value="recruit_enclave_uniform";
 												};
 											};
 											class Item84
@@ -6094,7 +6093,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="enclave_officer2_uniform";
+													value="Army_Fatigues_enc_01_uniform";
 												};
 											};
 											class Item85
@@ -6102,7 +6101,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="radiationsuit_enclave_uniform";
+													value="enclave_presidentsuitm_uniform";
 												};
 											};
 											class Item86
@@ -6110,7 +6109,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="recruit_enclave_uniform";
+													value="arcadesdoctor_uniform";
 												};
 											};
 											class Item87
@@ -6118,7 +6117,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Army_Fatigues_enc_01_uniform";
+													value="khan_great_01_uniform";
 												};
 											};
 											class Item88
@@ -6126,7 +6125,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="enclave_presidentsuitm_uniform";
+													value="kings_outfit_uniform";
 												};
 											};
 											class Item89
@@ -6134,7 +6133,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="arcadesdoctor_uniform";
+													value="mechanist_uniform";
 												};
 											};
 											class Item90
@@ -6142,7 +6141,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="khan_great_01_uniform";
+													value="ncr_Boone_02_uniform";
 												};
 											};
 											class Item91
@@ -6150,7 +6149,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="kings_outfit_uniform";
+													value="boone_02_Patron_uniform";
 												};
 											};
 											class Item92
@@ -6158,7 +6157,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="mechanist_uniform";
+													value="boone_02_Patron_Texas_uniform";
 												};
 											};
 											class Item93
@@ -6166,7 +6165,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="ncr_Boone_02_uniform";
+													value="boone02_winter_uniform";
 												};
 											};
 											class Item94
@@ -6174,7 +6173,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="boone_02_Patron_uniform";
+													value="ncr_civ_01_01_uniform";
 												};
 											};
 											class Item95
@@ -6182,7 +6181,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="boone_02_Patron_Texas_uniform";
+													value="ncr_civ_01_02_uniform";
 												};
 											};
 											class Item96
@@ -6190,7 +6189,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="boone02_winter_uniform";
+													value="ncr_civ_01_03_uniform";
 												};
 											};
 											class Item97
@@ -6198,7 +6197,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="ncr_civ_01_01_uniform";
+													value="ncr_civ_02_01_uniform";
 												};
 											};
 											class Item98
@@ -6206,7 +6205,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="ncr_civ_01_02_uniform";
+													value="ncr_civ_02_02_uniform";
 												};
 											};
 											class Item99
@@ -6214,7 +6213,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="ncr_civ_01_03_uniform";
+													value="ncr_civ_02_03_uniform";
 												};
 											};
 											class Item100
@@ -6222,7 +6221,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="ncr_civ_02_01_uniform";
+													value="riot_gear_armor_outfit_c_uniform";
 												};
 											};
 											class Item101
@@ -6230,7 +6229,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="ncr_civ_02_02_uniform";
+													value="petrochico_01_01_uniform";
 												};
 											};
 											class Item102
@@ -6238,7 +6237,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="ncr_civ_02_03_uniform";
+													value="generaloliver_uniform";
 												};
 											};
 											class Item103
@@ -6246,7 +6245,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="riot_gear_armor_outfit_c_uniform";
+													value="riot_gear_police_uniform";
 												};
 											};
 											class Item104
@@ -6254,7 +6253,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="petrochico_01_01_uniform";
+													value="riot_gear_police_02_uniform";
 												};
 											};
 											class Item105
@@ -6262,7 +6261,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="generaloliver_uniform";
+													value="armornvncrtrooper_mp_uniform";
 												};
 											};
 											class Item106
@@ -6270,7 +6269,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="riot_gear_police_uniform";
+													value="armornvncrtrooper_mp_winter_uniform";
 												};
 											};
 											class Item107
@@ -6278,7 +6277,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="riot_gear_police_02_uniform";
+													value="1950stylesuit_outfit02_uniform";
 												};
 											};
 											class Item108
@@ -6286,7 +6285,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armornvncrtrooper_mp_uniform";
+													value="combat_ranger_uniform";
 												};
 											};
 											class Item109
@@ -6294,7 +6293,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armornvncrtrooper_mp_winter_uniform";
+													value="combat_ranger_winter_uniform";
 												};
 											};
 											class Item110
@@ -6302,7 +6301,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950stylesuit_outfit02_uniform";
+													value="combat_ranger_snow_uniform";
 												};
 											};
 											class Item111
@@ -6310,7 +6309,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger_uniform";
+													value="nv_ranger_uniform";
 												};
 											};
 											class Item112
@@ -6318,7 +6317,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger_winter_uniform";
+													value="nv_rangerm_winter_uniform";
 												};
 											};
 											class Item113
@@ -6326,7 +6325,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger_snow_uniform";
+													value="armor_ncr_trooper_01_uniform";
 												};
 											};
 											class Item114
@@ -6334,7 +6333,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="nv_ranger_uniform";
+													value="armor_ncr_trooper_patron_02_uniform";
 												};
 											};
 											class Item115
@@ -6342,7 +6341,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="nv_rangerm_winter_uniform";
+													value="armor_ncr_trooper_patron_01_uniform";
 												};
 											};
 											class Item116
@@ -6350,7 +6349,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armor_ncr_trooper_01_uniform";
+													value="armor_ncr_trooper_01_winter_uniform";
 												};
 											};
 											class Item117
@@ -6358,7 +6357,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armor_ncr_trooper_patron_02_uniform";
+													value="armornvncrtrooper_plain_uniform";
 												};
 											};
 											class Item118
@@ -6366,7 +6365,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armor_ncr_trooper_patron_01_uniform";
+													value="armornvncrtrooper_plain_winter_uniform";
 												};
 											};
 											class Item119
@@ -6374,7 +6373,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armor_ncr_trooper_01_winter_uniform";
+													value="Armored_Coat_uniform";
 												};
 											};
 											class Item120
@@ -6382,7 +6381,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armornvncrtrooper_plain_uniform";
+													value="wastelandclothing03_uniform";
 												};
 											};
 											class Item121
@@ -6390,7 +6389,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armornvncrtrooper_plain_winter_uniform";
+													value="wastelandclothing01_uniform";
 												};
 											};
 											class Item122
@@ -6398,7 +6397,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Armored_Coat_uniform";
+													value="wasteland_clothing_05_uniform";
 												};
 											};
 											class Item123
@@ -6406,7 +6405,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="wastelandclothing03_uniform";
+													value="metalarmor_uniform";
 												};
 											};
 											class Item124
@@ -6414,7 +6413,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="wastelandclothing01_uniform";
+													value="raiderarmor03_uniform";
 												};
 											};
 											class Item125
@@ -6422,7 +6421,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="wasteland_clothing_05_uniform";
+													value="raiderarmor03_Black_uniform";
 												};
 											};
 											class Item126
@@ -6430,7 +6429,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="metalarmor_uniform";
+													value="raiderarmor04_uniform";
 												};
 											};
 											class Item127
@@ -6438,7 +6437,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="raiderarmor03_uniform";
+													value="raiderarmor04_Black_uniform";
 												};
 											};
 											class Item128
@@ -6446,7 +6445,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="raiderarmor03_Black_uniform";
+													value="raiderarmor02_uniform";
 												};
 											};
 											class Item129
@@ -6454,7 +6453,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="raiderarmor04_uniform";
+													value="raiderarmor02_Black_uniform";
 												};
 											};
 											class Item130
@@ -6462,7 +6461,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="raiderarmor04_Black_uniform";
+													value="Army_Fatigues_uniform";
 												};
 											};
 											class Item131
@@ -6470,7 +6469,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="raiderarmor02_uniform";
+													value="combatarmor_snow_uniform";
 												};
 											};
 											class Item132
@@ -6478,7 +6477,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="raiderarmor02_Black_uniform";
+													value="combat_ranger03_uniform";
 												};
 											};
 											class Item133
@@ -6486,7 +6485,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Army_Fatigues_uniform";
+													value="combat_ranger02_uniform";
 												};
 											};
 											class Item134
@@ -6494,7 +6493,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_snow_uniform";
+													value="combatarmor_snow_med_uniform";
 												};
 											};
 											class Item135
@@ -6502,7 +6501,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger03_uniform";
+													value="vault_101_uniform";
 												};
 											};
 											class Item136
@@ -6510,7 +6509,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger02_uniform";
+													value="vault_111_uniform";
 												};
 											};
 											class Item137
@@ -6518,7 +6517,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_snow_med_uniform";
+													value="vault_114_uniform";
 												};
 											};
 											class Item138
@@ -6526,7 +6525,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="vault_101_uniform";
+													value="vault_118_uniform";
 												};
 											};
 											class Item139
@@ -6534,7 +6533,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="vault_111_uniform";
+													value="vault_75_uniform";
 												};
 											};
 											class Item140
@@ -6542,7 +6541,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="vault_114_uniform";
+													value="vault_81_uniform";
 												};
 											};
 											class Item141
@@ -6550,7 +6549,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="vault_118_uniform";
+													value="vault_88_uniform";
 												};
 											};
 											class Item142
@@ -6558,7 +6557,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="vault_75_uniform";
+													value="vault_95_uniform";
 												};
 											};
 											class Item143
@@ -6566,7 +6565,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="vault_81_uniform";
+													value="tunnelsnake_uniform";
 												};
 											};
 											class Item144
@@ -6574,7 +6573,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="vault_88_uniform";
+													value="vaultsuitutility_uniform";
 												};
 											};
 											class Item145
@@ -6582,7 +6581,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="vault_95_uniform";
+													value="vaultsuitutility13_uniform";
 												};
 											};
 											class Item146
@@ -6590,7 +6589,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="tunnelsnake_uniform";
+													value="boomerhat01";
 												};
 											};
 											class Item147
@@ -6598,7 +6597,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="vaultsuitutility_uniform";
+													value="boomerhat02";
 												};
 											};
 											class Item148
@@ -6606,7 +6605,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="vaultsuitutility13_uniform";
+													value="boomerhat03";
 												};
 											};
 											class Item149
@@ -6614,7 +6613,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="boomerhat01";
+													value="hatwastelandmerchant";
 												};
 											};
 											class Item150
@@ -6622,7 +6621,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="boomerhat02";
+													value="bandanared";
 												};
 											};
 											class Item151
@@ -6630,7 +6629,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="boomerhat03";
+													value="jessupbandana";
 												};
 											};
 											class Item152
@@ -6638,7 +6637,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="hatwastelandmerchant";
+													value="cowboy_hat_02";
 												};
 											};
 											class Item153
@@ -6646,7 +6645,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="bandanared";
+													value="combatarmor_helm_02";
 												};
 											};
 											class Item154
@@ -6654,7 +6653,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="jessupbandana";
+													value="combatarmor_helm";
 												};
 											};
 											class Item155
@@ -6662,7 +6661,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="cowboy_hat_02";
+													value="cowboy_hat_01";
 												};
 											};
 											class Item156
@@ -6670,7 +6669,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_helm_02";
+													value="PlagueMask_Head";
 												};
 											};
 											class Item157
@@ -6678,7 +6677,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_helm";
+													value="headwrap_01";
 												};
 											};
 											class Item158
@@ -6686,7 +6685,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="cowboy_hat_01";
+													value="headwrap_02";
 												};
 											};
 											class Item159
@@ -6694,7 +6693,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="PlagueMask_Head";
+													value="headwrap_03";
 												};
 											};
 											class Item160
@@ -6702,7 +6701,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="headwrap_01";
+													value="headwrap_04";
 												};
 											};
 											class Item161
@@ -6710,7 +6709,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="headwrap_02";
+													value="jgraham_helmet";
 												};
 											};
 											class Item162
@@ -6718,7 +6717,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="headwrap_03";
+													value="cowboy_hat_05";
 												};
 											};
 											class Item163
@@ -6726,7 +6725,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="headwrap_04";
+													value="1950_style_hat";
 												};
 											};
 											class Item164
@@ -6734,7 +6733,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="jgraham_helmet";
+													value="1950_style_hat02";
 												};
 											};
 											class Item165
@@ -6742,7 +6741,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="cowboy_hat_05";
+													value="cowboy_hat_04";
 												};
 											};
 											class Item166
@@ -6750,7 +6749,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950_style_hat";
+													value="cowboy_hat_03";
 												};
 											};
 											class Item167
@@ -6758,7 +6757,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="1950_style_hat02";
+													value="hatwastelandmerchant_Patreon";
 												};
 											};
 											class Item168
@@ -6766,7 +6765,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="cowboy_hat_04";
+													value="lucassimms_hat";
 												};
 											};
 											class Item169
@@ -6774,7 +6773,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="cowboy_hat_03";
+													value="slaterrecon1";
 												};
 											};
 											class Item170
@@ -6782,7 +6781,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="hatwastelandmerchant_Patreon";
+													value="hat_wasteland_clothing_02";
 												};
 											};
 											class Item171
@@ -6790,7 +6789,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="lucassimms_hat";
+													value="centurion_helmet";
 												};
 											};
 											class Item172
@@ -6798,7 +6797,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="slaterrecon1";
+													value="legate_helm";
 												};
 											};
 											class Item173
@@ -6806,7 +6805,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="hat_wasteland_clothing_02";
+													value="legionhood";
 												};
 											};
 											class Item174
@@ -6814,7 +6813,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="centurion_helmet";
+													value="legionfeatherhead01";
 												};
 											};
 											class Item175
@@ -6822,7 +6821,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legate_helm";
+													value="legionhelmetbase";
 												};
 											};
 											class Item176
@@ -6830,7 +6829,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionhood";
+													value="legionfeatherhead02";
 												};
 											};
 											class Item177
@@ -6838,7 +6837,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionfeatherhead01";
+													value="legionbandana";
 												};
 											};
 											class Item178
@@ -6846,7 +6845,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionhelmetbase";
+													value="legionfeatherhead03";
 												};
 											};
 											class Item179
@@ -6854,7 +6853,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionfeatherhead02";
+													value="legionwhitehelmetbase";
 												};
 											};
 											class Item180
@@ -6862,7 +6861,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionbandana";
+													value="legionwollfhead";
 												};
 											};
 											class Item181
@@ -6870,7 +6869,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionfeatherhead03";
+													value="chinesecommando_hat_general";
 												};
 											};
 											class Item182
@@ -6878,7 +6877,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionwhitehelmetbase";
+													value="chinesecommando_hat";
 												};
 											};
 											class Item183
@@ -6886,7 +6885,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="legionwollfhead";
+													value="chinesecommando_cap_old";
 												};
 											};
 											class Item184
@@ -6894,7 +6893,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="chinesecommando_hat_general";
+													value="Combat_Armor_Helmet_02";
 												};
 											};
 											class Item185
@@ -6902,7 +6901,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="chinesecommando_hat";
+													value="Combat_Armor_Helmet";
 												};
 											};
 											class Item186
@@ -6910,7 +6909,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="chinesecommando_cap_old";
+													value="Army_Helmet_02";
 												};
 											};
 											class Item187
@@ -6918,7 +6917,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Combat_Armor_Helmet_02";
+													value="H_Beret_Enclave";
 												};
 											};
 											class Item188
@@ -6926,7 +6925,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Combat_Armor_Helmet";
+													value="hat_enclave_officer";
 												};
 											};
 											class Item189
@@ -6934,7 +6933,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Army_Helmet_02";
+													value="stetson_enclave";
 												};
 											};
 											class Item190
@@ -6942,7 +6941,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="H_Beret_Enclave";
+													value="khan_helmet_01";
 												};
 											};
 											class Item191
@@ -6950,7 +6949,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="hat_enclave_officer";
+													value="khan_helmet_02";
 												};
 											};
 											class Item192
@@ -6958,7 +6957,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="stetson_enclave";
+													value="helmet_antagonizer";
 												};
 											};
 											class Item193
@@ -6966,7 +6965,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="khan_helmet_01";
+													value="Batting_Helmet_blue";
 												};
 											};
 											class Item194
@@ -6974,7 +6973,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="khan_helmet_02";
+													value="Batting_Helmet_GREEN";
 												};
 											};
 											class Item195
@@ -6982,7 +6981,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="helmet_antagonizer";
+													value="Batting_Helmet_RED";
 												};
 											};
 											class Item196
@@ -6990,7 +6989,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Batting_Helmet_blue";
+													value="partyhat_02";
 												};
 											};
 											class Item197
@@ -6998,7 +6997,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Batting_Helmet_GREEN";
+													value="constructionhat";
 												};
 											};
 											class Item198
@@ -7006,7 +7005,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Batting_Helmet_RED";
+													value="firehelmet";
 												};
 											};
 											class Item199
@@ -7014,7 +7013,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="partyhat_02";
+													value="mechanist_helm";
 												};
 											};
 											class Item200
@@ -7022,7 +7021,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="constructionhat";
+													value="partyhat";
 												};
 											};
 											class Item201
@@ -7030,7 +7029,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="firehelmet";
+													value="clownmask";
 												};
 											};
 											class Item202
@@ -7038,7 +7037,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="mechanist_helm";
+													value="nvrebreather";
 												};
 											};
 											class Item203
@@ -7046,7 +7045,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="partyhat";
+													value="nvrebreather_02";
 												};
 											};
 											class Item204
@@ -7054,7 +7053,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="clownmask";
+													value="bosunderarmorhelmet";
 												};
 											};
 											class Item205
@@ -7062,7 +7061,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="nvrebreather";
+													value="mask";
 												};
 											};
 											class Item206
@@ -7070,7 +7069,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="nvrebreather_02";
+													value="NCR_green_beret";
 												};
 											};
 											class Item207
@@ -7078,7 +7077,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="bosunderarmorhelmet";
+													value="NCR_red_beret";
 												};
 											};
 											class Item208
@@ -7086,7 +7085,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="mask";
+													value="NCR_Black_beret";
 												};
 											};
 											class Item209
@@ -7094,7 +7093,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="NCR_green_beret";
+													value="riot_gear_armor_helmet_c";
 												};
 											};
 											class Item210
@@ -7102,7 +7101,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="NCR_red_beret";
+													value="genolivercap";
 												};
 											};
 											class Item211
@@ -7110,7 +7109,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="NCR_Black_beret";
+													value="armor_ncr_trooper_helm_mp";
 												};
 											};
 											class Item212
@@ -7118,7 +7117,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="riot_gear_armor_helmet_c";
+													value="rangerhat_white";
 												};
 											};
 											class Item213
@@ -7126,7 +7125,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="genolivercap";
+													value="rangerhat";
 												};
 											};
 											class Item214
@@ -7134,7 +7133,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armor_ncr_trooper_helm_mp";
+													value="combat_ranger_helmet";
 												};
 											};
 											class Item215
@@ -7142,7 +7141,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rangerhat_white";
+													value="combat_ranger_helmet_patron01";
 												};
 											};
 											class Item216
@@ -7150,7 +7149,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rangerhat";
+													value="combat_ranger_helmet03";
 												};
 											};
 											class Item217
@@ -7158,7 +7157,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger_helmet";
+													value="slavecollar";
 												};
 											};
 											class Item218
@@ -7166,7 +7165,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger_helmet_patron01";
+													value="combat_ranger_helmet_patron02";
 												};
 											};
 											class Item219
@@ -7174,7 +7173,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger_helmet03";
+													value="combat_ranger_helmet_patron03";
 												};
 											};
 											class Item220
@@ -7182,7 +7181,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="slavecollar";
+													value="combat_ranger_helmet_winter";
 												};
 											};
 											class Item221
@@ -7190,7 +7189,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger_helmet_patron02";
+													value="riot_gear_armor_helmet_c_02";
 												};
 											};
 											class Item222
@@ -7198,7 +7197,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger_helmet_patron03";
+													value="riot_gear_armor_helmet_c_03";
 												};
 											};
 											class Item223
@@ -7206,7 +7205,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger_helmet_winter";
+													value="armor_ncr_trooper_helm_02";
 												};
 											};
 											class Item224
@@ -7214,7 +7213,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="riot_gear_armor_helmet_c_02";
+													value="armor_ncr_trooper_helm_winter";
 												};
 											};
 											class Item225
@@ -7222,7 +7221,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="riot_gear_armor_helmet_c_03";
+													value="armor_ncr_trooper_helm";
 												};
 											};
 											class Item226
@@ -7230,7 +7229,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armor_ncr_trooper_helm_02";
+													value="armor_ncr_trooper_helm_green";
 												};
 											};
 											class Item227
@@ -7238,7 +7237,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armor_ncr_trooper_helm_winter";
+													value="eyebot_helmet";
 												};
 											};
 											class Item228
@@ -7246,7 +7245,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armor_ncr_trooper_helm";
+													value="fiendhelmet";
 												};
 											};
 											class Item229
@@ -7254,7 +7253,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="armor_ncr_trooper_helm_green";
+													value="fiendhelmet02";
 												};
 											};
 											class Item230
@@ -7262,7 +7261,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="eyebot_helmet";
+													value="fiendhelmet03";
 												};
 											};
 											class Item231
@@ -7270,7 +7269,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="fiendhelmet";
+													value="helmetmetalarmorm";
 												};
 											};
 											class Item232
@@ -7278,7 +7277,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="fiendhelmet02";
+													value="MetArmMIIHelm";
 												};
 											};
 											class Item233
@@ -7286,7 +7285,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="fiendhelmet03";
+													value="raiderarmor04_hat";
 												};
 											};
 											class Item234
@@ -7294,7 +7293,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="helmetmetalarmorm";
+													value="Tribalt51b";
 												};
 											};
 											class Item235
@@ -7302,7 +7301,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="MetArmMIIHelm";
+													value="combatarmor_helm_snow";
 												};
 											};
 											class Item236
@@ -7310,7 +7309,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="raiderarmor04_hat";
+													value="combat_ranger_helmet02";
 												};
 											};
 											class Item237
@@ -7318,7 +7317,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Tribalt51b";
+													value="Army_Helmet";
 												};
 											};
 											class Item238
@@ -7326,7 +7325,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combatarmor_helm_snow";
+													value="VTSecurityHelmet111";
 												};
 											};
 											class Item239
@@ -7334,7 +7333,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="combat_ranger_helmet02";
+													value="helmetraider02";
 												};
 											};
 											class Item240
@@ -7342,7 +7341,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Army_Helmet";
+													value="helmetraider03";
 												};
 											};
 											class Item241
@@ -7350,7 +7349,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="VTSecurityHelmet111";
+													value="trouper_mask_winter";
 												};
 											};
 											class Item242
@@ -7358,7 +7357,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="helmetraider02";
+													value="trouper_mask";
 												};
 											};
 											class Item243
@@ -7366,7 +7365,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="helmetraider03";
+													value="GasMask";
 												};
 											};
 											class Item244
@@ -7374,7 +7373,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="trouper_mask_winter";
+													value="PlagueMask";
 												};
 											};
 											class Item245
@@ -7382,7 +7381,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="trouper_mask";
+													value="republican_glasses";
 												};
 											};
 											class Item246
@@ -7390,7 +7389,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="GasMask";
+													value="republican_bandana";
 												};
 											};
 											class Item247
@@ -7398,7 +7397,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="PlagueMask";
+													value="republican_glas_ban";
 												};
 											};
 											class Item248
@@ -7406,7 +7405,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="republican_glasses";
+													value="nvrebreather_mask";
 												};
 											};
 											class Item249
@@ -7414,7 +7413,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="republican_bandana";
+													value="nvrebreather_mask_02";
 												};
 											};
 											class Item250
@@ -7422,34 +7421,10 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="republican_glas_ban";
-												};
-											};
-											class Item251
-											{
-												class data
-												{
-													singleType="STRING";
-													value="nvrebreather_mask";
-												};
-											};
-											class Item252
-											{
-												class data
-												{
-													singleType="STRING";
-													value="nvrebreather_mask_02";
-												};
-											};
-											class Item253
-											{
-												class data
-												{
-													singleType="STRING";
 													value="goggles_wastelandclothing03";
 												};
 											};
-											class Item254
+											class Item251
 											{
 												class data
 												{
@@ -7938,76 +7913,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3979.5,6.6321864,4951.5};
-				angles[]={0,0.52359879,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1105;
-			type="Props_AM_junkwall03";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item156
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3983.375,6.6321864,4949.625};
-				angles[]={0,2.0943952,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1106;
-			type="Props_AM_junkwall03";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item157
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={3990.5,6.6321864,4956.625};
 				angles[]={0,3.1415927,0};
 			};
@@ -8038,77 +7943,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item158
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3980.25,6.6321864,4966.375};
-				angles[]={0,3.141593,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1108;
-			type="Props_AM_junkwall03";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item159
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={3976.875,6.6321864,4960.875};
-				angles[]={0,1.5707964,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				createAsSimpleObject=1;
-				disableSimulation=1;
-			};
-			id=1109;
-			type="Props_AM_junkwall03";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item160
+		class Item156
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8143,7 +7978,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item161
+		class Item157
 		{
 			dataType="Object";
 			class PositionInfo
@@ -8177,6 +8012,69 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item158
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3979.75,6.5185471,4950.125};
+				angles[]={0,0.52359879,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1114;
+			type="Props_AM_junkwall04";
+		};
+		class Item159
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3977,6.6321864,4960.875};
+				angles[]={0,1.5707964,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1115;
+			type="Props_AM_junkwall02";
+		};
+		class Item160
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3984.875,6.6321864,4950.875};
+				angles[]={0,5.2359877,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1116;
+			type="Props_AM_junkwall03";
+		};
+		class Item161
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3979.375,6.5185471,4966.375};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=1117;
+			type="Props_AM_junkwall04";
 		};
 	};
 };

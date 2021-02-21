@@ -70,5 +70,7 @@ deleteVehicle _IMS_playerTargetTrigger;
 
 params ["_player", "_didJIP"];
 
-["registerNpc"] call MeleeArena_fnc_initRegisterNpc;
+LastTime = 0;
+call MeleeArena_fnc_showRegisterAction;
 ["ace_arsenal_displayClosed", MeleeArena_fnc_eventOnArsenalClose] call CBA_fnc_addEventHandler;
+[] remoteExec ["MeleeArena_fnc_updatePlayerListDisplay"];

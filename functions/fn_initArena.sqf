@@ -6,12 +6,15 @@ _secondSpawnpoint = getMarkerPos _meleeArenaSpawn2Marker;
 isArenaEmpty = true;
 publicVariable "isArenaEmpty";
 
-_allPlayers = call BIS_fnc_listPlayers;
+private _allPlayers = call BIS_fnc_listPlayers;
+
 while{count _allPlayers > 0} do {
+	_allPlayers = call BIS_fnc_listPlayers;
 	if(isArenaEmpty) then {
 		//TODO: REMOVE DEBUG!
-		if(count registeredPlayers < 2) then {
-			["<t valign='top' size='2'>Not enough registered players to start a duel!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
+		private _aliveRegistered = _allPlayers select { alive _x && getPlayerUID _x in registeredPlayers};
+		if(count _aliveRegistered < 2) then {
+			["<t valign='top' size='2'>Not enough of alive registered players to start a duel!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
 		}
 		else {
 			[_firstSpawnpoint, _secondSpawnpoint] call MeleeArena_fnc_initFight;
