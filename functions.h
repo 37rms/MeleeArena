@@ -27,4 +27,8 @@ class MeleeArena
 	{
 		class updatePlayerListDisplay {file="functions\fn_updatePlayerListDisplay.sqf";};
 	};
+	class DrawFunctions
+	{
+		class drawIconAbovePlayers {file="functions\fn_drawIconAbovePlayers.sqf";};
+	};
 };

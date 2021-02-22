@@ -52,6 +52,7 @@ if (_secondPlayerWeight > 0.1) then {
 //publicVariable "registeredPlayers";
 
 private _alivePlayers = [_firstPlayerObject, _secondPlayerObject];
+[_alivePlayers] remoteExec ["MeleeArena_fnc_drawIconAbovePlayers", allPlayers - _alivePlayers];
 
 //Freeze players
 {

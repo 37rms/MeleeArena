@@ -72,5 +72,6 @@ params ["_player", "_didJIP"];
 
 LastTime = 0;
 call MeleeArena_fnc_showRegisterAction;
+call MeleeArena_fnc_updatePlayerListDisplay;
 ["ace_arsenal_displayOpened", MeleeArena_fnc_eventOnArsenalOpen] call CBA_fnc_addEventHandler;
 ["ace_arsenal_displayClosed", MeleeArena_fnc_eventOnArsenalClose] call CBA_fnc_addEventHandler;
