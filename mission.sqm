@@ -1,4 +1,4 @@
-version=53;
+version=54;
 class EditorData
 {
 	moveGridStep=0.125;
@@ -8,7 +8,7 @@ class EditorData
 	toggles=46;
 	class ItemIDProvider
 	{
-		nextID=2433;
+		nextID=2434;
 	};
 	class MarkerIDProvider
 	{
@@ -16,17 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=35;
+		nextID=38;
 	};
 	class Camera
 	{
-		pos[]={3971.5723,12.066945,4905.7192};
-		dir[]={0.081479467,-0.33791864,0.93776351};
-		up[]={0.029286891,0.94101399,0.33707178};
-		aside[]={0.99636322,1.6428212e-006,-0.086578108};
+		pos[]={3994.7256,12.066945,4901.084};
+		dir[]={0.61487943,-0.76586354,0.18808608};
+		up[]={0.73236609,0.64300311,0.22402419};
+		aside[]={0.29251188,0,-0.95626187};
 	};
 };
 binarizationWanted=0;
+sourceName="swordsAndSandals";
 addons[]=
 {
 	"AM_Items",
@@ -3497,6 +3498,8 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{0 = [""AmmoboxInit"", [this, false]] spawn BIS_fnc_arsenal;}";
+				name="arsenal_npc";
 				dynamicSimulation=1;
 			};
 			id=1092;

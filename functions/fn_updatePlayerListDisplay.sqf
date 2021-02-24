@@ -5,7 +5,6 @@ if(isNil{player getVariable "playerDisplayControlId";}) then {
 	player setVariable ["playerDisplayControlId", ctrlIDC _display];
 	_display ctrlSetBackgroundColor [0, 0, 0, 0.1];
 	_display ctrlCommit 0;
-	systemChat str "created a new display!";
 }else{
 	_controlId = player getVariable "playerDisplayControlId";
 	_display = findDisplay 46 displayCtrl _controlId;
@@ -25,7 +24,6 @@ if(count registeredPlayers == 0) then {
 		_displayText = _displayText + _playerText + "<br/>";
 	} forEach registeredPlayers;
 };
-systemChat str "updated display";
 _display ctrlSetStructuredText parseText _displayText;
 _display ctrlSetPosition [safeZoneX, safeZoneY, ctrlTextWidth _display, ctrlTextHeight _display];
 _display ctrlCommit 0;

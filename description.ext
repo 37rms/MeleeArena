@@ -1,6 +1,9 @@
+#include "LARs\override_VA_templates\settings.hpp"
+
 class CfgFunctions
 {
 	#include "functions.h"
+	#include "LARs\override_VA_templates\functions\functions.hpp"
 };
 
 author = "JarasonPC & shawneeo & Nicer";
