@@ -18,8 +18,8 @@ while{count _allPlayers > 0} do {
 		} forEach _aliveRegistered;
 		
 		//TODO: REMOVE DEBUG!
-		if(count AliveRegistered < 2) then {
-			["<t valign='top' size='2'>Not enough of alive registered players to start a duel!</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
+		if(count AliveRegistered < 1) then {
+			["<t valign='top' size='2'>Not enough of alive registered players to start a duel!</t>", -1, safeZoneY] remoteExec ["BIS_fnc_dynamicText"];
 		}
 		else {
 			[_firstSpawnpoint, _secondSpawnpoint] call MeleeArena_fnc_initFight;

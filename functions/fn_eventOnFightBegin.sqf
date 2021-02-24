@@ -19,3 +19,5 @@ else{
 	player assignItem _chosenHmd;
 };
 player allowDamage true;
+player removeAction (player getVariable "actionRegisterUnregisterId");
+player setVariable ["isInArena", true];

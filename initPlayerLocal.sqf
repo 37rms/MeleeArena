@@ -70,8 +70,10 @@ deleteVehicle _IMS_playerTargetTrigger;
 
 params ["_player", "_didJIP"];
 
-LastTime = 0;
-call MeleeArena_fnc_showRegisterAction;
+_player setVariable ["buttonCheckedLastTime", 0];
+_player setVariable ["isInArena", false];
+_player setVariable ["actionRegisterUnregisterId", -1];
+_player setVariable ["buttonCheckedLastTime", 0];
 call MeleeArena_fnc_updatePlayerListDisplay;
 [missionNamespace, "arsenalOpened", MeleeArena_fnc_eventOnArsenalOpen] call BIS_fnc_addScriptedEventHandler;
 [missionNamespace, "arsenalClosed", MeleeArena_fnc_eventOnArsenalClose] call BIS_fnc_addScriptedEventHandler;
