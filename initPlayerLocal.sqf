@@ -68,6 +68,17 @@ sleep 1;
 deleteVehicle _IMS_playerTargetTrigger;
 };
 
+playSoundOnUnit = {
+	params["_unit", "_sound"];
+
+	private _dummy = "#particlesource" createVehicleLocal ASLToAGL getPosWorld _unit;
+	_dummy say3D _sound;
+	_dummy spawn {
+		sleep 5; // at least the length of your sound
+		deleteVehicle _this;
+	};
+}
+
 player addEventHandler ["HandleDamage", {
 	params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
 
@@ -77,7 +88,7 @@ player addEventHandler ["HandleDamage", {
 		"playerhit3"
 	];
 	private _soundToPlay = selectRandom _hitSounds;
-	[_unit, _soundToPlay] remoteExec ["say3D"];
+	[_unit, _soundToPlay] remoteExec ["playSoundOnUnit"];
 }];
 
 player addEventHandler ["Killed", {
@@ -89,8 +100,7 @@ player addEventHandler ["Killed", {
 		"playerdeath3"
 	];
 	private _soundToPlay = selectRandom _deathSounds;
-	[_unit, _soundToPlay] remoteExec ["say3D", allPlayers - [_unit]];
-	playSound _soundToPlay;
+	[_unit, _soundToPlay] remoteExec ["playSoundOnUnit"];
 }];
 
 player setVariable ["buttonCheckedLastTime", 0];
