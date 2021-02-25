@@ -5,6 +5,7 @@ params ["_firstSpawnpoint", "_secondSpawnpoint"];
 isArenaEmpty = false;
 publicVariable "isArenaEmpty";
 
+"arenastart" remoteExec ["playSound"];
 private _uids = [];
 private _weights = [];
 
@@ -45,12 +46,6 @@ if (_secondPlayerWeight > 0.1) then {
 	};
 }] call CBA_fnc_hashEachPair;
 
-
-
-
-//private _secondPlayer = _firstPlayer; //i am so lonely :c
-//publicVariable "registeredPlayers";
-
 private _alivePlayers = [_firstPlayerObject, _secondPlayerObject];
 [_alivePlayers] remoteExec ["MeleeArena_fnc_drawIconAbovePlayers", allPlayers - _alivePlayers];
 
@@ -67,8 +62,10 @@ private _alivePlayers = [_firstPlayerObject, _secondPlayerObject];
 private _angle = (_firstSpawnpoint getDir _secondSpawnpoint);
 _firstPlayerObject setPos _firstSpawnpoint;
 _firstPlayerObject setDir _angle;
+"playerteleport" remoteExec ["playSound", _firstPlayerObject];
 _secondPlayerObject setPos _secondSpawnpoint;
 _secondPlayerObject setDir -_angle;
+"playerteleport" remoteExec ["playSound", _secondPlayerObject];
 
 //Annoucement about fight
 ["<t valign='top' size='2'>Duel is starting</t>", -1, -0.3] remoteExec ["BIS_fnc_dynamicText"];
@@ -115,3 +112,5 @@ else{
 
 isArenaEmpty = true;
 publicVariable "isArenaEmpty";
+"playerwin" remoteExec ["playSound", _alivePlayer];
+"arenaend" remoteExec ["playSound", allPlayers - [_alivePlayer]];

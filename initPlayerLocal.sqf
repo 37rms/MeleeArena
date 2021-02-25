@@ -68,12 +68,35 @@ sleep 1;
 deleteVehicle _IMS_playerTargetTrigger;
 };
 
-params ["_player", "_didJIP"];
+player addEventHandler ["HandleDamage", {
+	params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
 
-_player setVariable ["buttonCheckedLastTime", 0];
-_player setVariable ["isInArena", false];
-_player setVariable ["actionRegisterUnregisterId", -1];
-_player setVariable ["buttonCheckedLastTime", 0];
+	private _hitSounds = [
+		"playerhit1",
+		"playerhit2",
+		"playerhit3"
+	];
+	private _soundToPlay = selectRandom _hitSounds;
+	[_unit, _soundToPlay] remoteExec ["say3D"];
+}];
+
+player addEventHandler ["Killed", {
+	params ["_unit", "_killer", "_instigator", "_useEffects"];
+
+	private _deathSounds = [
+		"playerdeath1",
+		"playerdeath2",
+		"playerdeath3"
+	];
+	private _soundToPlay = selectRandom _deathSounds;
+	[_unit, _soundToPlay] remoteExec ["say3D", allPlayers - [_unit]];
+	playSound _soundToPlay;
+}];
+
+player setVariable ["buttonCheckedLastTime", 0];
+player setVariable ["isInArena", false];
+player setVariable ["actionRegisterUnregisterId", -1];
+player setVariable ["buttonCheckedLastTime", 0];
 call MeleeArena_fnc_updatePlayerListDisplay;
 [missionNamespace, "arsenalOpened", MeleeArena_fnc_eventOnArsenalOpen] call BIS_fnc_addScriptedEventHandler;
 [missionNamespace, "arsenalClosed", MeleeArena_fnc_eventOnArsenalClose] call BIS_fnc_addScriptedEventHandler;

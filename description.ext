@@ -6,6 +6,11 @@ class CfgFunctions
 	#include "LARs\override_VA_templates\functions\functions.hpp"
 };
 
+class CfgSounds
+{
+	#include "cfgSounds.hpp"
+};
+
 author = "JarasonPC & shawneeo & Nicer";
 briefingName = "Melee Arena";
 onLoadName = "Melee Arena";
