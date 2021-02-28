@@ -8,7 +8,7 @@ class EditorData
 	toggles=46;
 	class ItemIDProvider
 	{
-		nextID=2674;
+		nextID=2677;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=44;
+		nextID=50;
 	};
 	class Camera
 	{
-		pos[]={3968.8796,18.267952,4913.3423};
-		dir[]={0.92631733,-0.30673814,-0.21892454};
-		up[]={0.29854301,0.95178258,-0.070558921};
-		aside[]={-0.23001245,-4.2445026e-007,-0.97322369};
+		pos[]={3941.6531,46.801922,4919.0986};
+		dir[]={0.7104646,-0.69033176,-0.13753672};
+		up[]={0.67774993,0.72347778,-0.13120642};
+		aside[]={-0.19008784,3.657864e-006,-0.98188245};
 	};
 };
 binarizationWanted=0;
@@ -194,7 +194,7 @@ class Mission
 			};
 			id=2436;
 			type="novac_dino_stairs";
-			atlOffset=0.54514885;
+			atlOffset=0.54521179;
 		};
 		class Item3
 		{
@@ -2113,7 +2113,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=20;
+				items=22;
 				class Item0
 				{
 					dataType="Object";
@@ -3254,6 +3254,120 @@ class Mission
 						nAttributes=2;
 					};
 				};
+				class Item20
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3966.0186,5.0014391,4870.4731};
+						angles[]={0,0.2617994,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Fighter";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="wastelandsettler03_uniform";
+								isBackpack=0;
+							};
+							radio="ItemRadio";
+						};
+					};
+					id=2675;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item21
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3965.25,5.0014391,4870.7998};
+						angles[]={0,0.2617994,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Fighter";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="wastelandsettler03_uniform";
+								isBackpack=0;
+							};
+							radio="ItemRadio";
+						};
+					};
+					id=2676;
+					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male07ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
 			};
 			class Attributes
 			{
@@ -3362,6 +3476,1781 @@ class Mission
 			id=2534;
 			type="Land_chet";
 			atlOffset=0.025000095;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_arsenal_attribute";
+					expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+					class Value
+					{
+						class data
+						{
+							singleType="ARRAY";
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										singleType="ARRAY";
+										class value
+										{
+											items=217;
+											class Item0
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_BroadMachete";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_ChancesKnife";
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_Chopper";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_Cleaver";
+												};
+											};
+											class Item4
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_CombatKnife";
+												};
+											};
+											class Item5
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_DressCane";
+												};
+											};
+											class Item6
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_KitchenKnife";
+												};
+											};
+											class Item7
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_KitchenKnifeRusty";
+												};
+											};
+											class Item8
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_machete";
+												};
+											};
+											class Item9
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_MacheteGladius";
+												};
+											};
+											class Item10
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_HatchetThrowing";
+												};
+											};
+											class Item11
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_StraighRazor";
+												};
+											};
+											class Item12
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_Figaro";
+												};
+											};
+											class Item13
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_switchblade";
+												};
+											};
+											class Item14
+											{
+												class data
+												{
+													singleType="STRING";
+													value="AM_WBK_TireIron";
+												};
+											};
+											class Item15
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Shield_RoadSign_Stop";
+												};
+											};
+											class Item16
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Shield_RoadSign";
+												};
+											};
+											class Item17
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Shield_RoadSign_NoPeople";
+												};
+											};
+											class Item18
+											{
+												class data
+												{
+													singleType="STRING";
+													value="boomerhat01";
+												};
+											};
+											class Item19
+											{
+												class data
+												{
+													singleType="STRING";
+													value="boomerhat02";
+												};
+											};
+											class Item20
+											{
+												class data
+												{
+													singleType="STRING";
+													value="boomerhat03";
+												};
+											};
+											class Item21
+											{
+												class data
+												{
+													singleType="STRING";
+													value="hatwastelandmerchant";
+												};
+											};
+											class Item22
+											{
+												class data
+												{
+													singleType="STRING";
+													value="bandanared";
+												};
+											};
+											class Item23
+											{
+												class data
+												{
+													singleType="STRING";
+													value="jessupbandana";
+												};
+											};
+											class Item24
+											{
+												class data
+												{
+													singleType="STRING";
+													value="cowboy_hat_02";
+												};
+											};
+											class Item25
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_helm";
+												};
+											};
+											class Item26
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_helm_02";
+												};
+											};
+											class Item27
+											{
+												class data
+												{
+													singleType="STRING";
+													value="PlagueMask_Head";
+												};
+											};
+											class Item28
+											{
+												class data
+												{
+													singleType="STRING";
+													value="headwrap_01";
+												};
+											};
+											class Item29
+											{
+												class data
+												{
+													singleType="STRING";
+													value="headwrap_02";
+												};
+											};
+											class Item30
+											{
+												class data
+												{
+													singleType="STRING";
+													value="headwrap_03";
+												};
+											};
+											class Item31
+											{
+												class data
+												{
+													singleType="STRING";
+													value="headwrap_04";
+												};
+											};
+											class Item32
+											{
+												class data
+												{
+													singleType="STRING";
+													value="jgraham_helmet";
+												};
+											};
+											class Item33
+											{
+												class data
+												{
+													singleType="STRING";
+													value="cowboy_hat_05";
+												};
+											};
+											class Item34
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950_style_hat";
+												};
+											};
+											class Item35
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950_style_hat02";
+												};
+											};
+											class Item36
+											{
+												class data
+												{
+													singleType="STRING";
+													value="cowboy_hat_04";
+												};
+											};
+											class Item37
+											{
+												class data
+												{
+													singleType="STRING";
+													value="cowboy_hat_03";
+												};
+											};
+											class Item38
+											{
+												class data
+												{
+													singleType="STRING";
+													value="hatwastelandmerchant_Patreon";
+												};
+											};
+											class Item39
+											{
+												class data
+												{
+													singleType="STRING";
+													value="lucassimms_hat";
+												};
+											};
+											class Item40
+											{
+												class data
+												{
+													singleType="STRING";
+													value="slaterrecon1";
+												};
+											};
+											class Item41
+											{
+												class data
+												{
+													singleType="STRING";
+													value="hat_wasteland_clothing_02";
+												};
+											};
+											class Item42
+											{
+												class data
+												{
+													singleType="STRING";
+													value="centurion_helmet";
+												};
+											};
+											class Item43
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionhood";
+												};
+											};
+											class Item44
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legate_helm";
+												};
+											};
+											class Item45
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionfeatherhead01";
+												};
+											};
+											class Item46
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionhelmetbase";
+												};
+											};
+											class Item47
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionfeatherhead02";
+												};
+											};
+											class Item48
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionbandana";
+												};
+											};
+											class Item49
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionfeatherhead03";
+												};
+											};
+											class Item50
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionwhitehelmetbase";
+												};
+											};
+											class Item51
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionwollfhead";
+												};
+											};
+											class Item52
+											{
+												class data
+												{
+													singleType="STRING";
+													value="chinesecommando_hat_general";
+												};
+											};
+											class Item53
+											{
+												class data
+												{
+													singleType="STRING";
+													value="chinesecommando_hat";
+												};
+											};
+											class Item54
+											{
+												class data
+												{
+													singleType="STRING";
+													value="chinesecommando_cap_old";
+												};
+											};
+											class Item55
+											{
+												class data
+												{
+													singleType="STRING";
+													value="khan_helmet_01";
+												};
+											};
+											class Item56
+											{
+												class data
+												{
+													singleType="STRING";
+													value="khan_helmet_02";
+												};
+											};
+											class Item57
+											{
+												class data
+												{
+													singleType="STRING";
+													value="constructionhat";
+												};
+											};
+											class Item58
+											{
+												class data
+												{
+													singleType="STRING";
+													value="partyhat_02";
+												};
+											};
+											class Item59
+											{
+												class data
+												{
+													singleType="STRING";
+													value="firehelmet";
+												};
+											};
+											class Item60
+											{
+												class data
+												{
+													singleType="STRING";
+													value="mechanist_helm";
+												};
+											};
+											class Item61
+											{
+												class data
+												{
+													singleType="STRING";
+													value="partyhat";
+												};
+											};
+											class Item62
+											{
+												class data
+												{
+													singleType="STRING";
+													value="clownmask";
+												};
+											};
+											class Item63
+											{
+												class data
+												{
+													singleType="STRING";
+													value="nvrebreather";
+												};
+											};
+											class Item64
+											{
+												class data
+												{
+													singleType="STRING";
+													value="nvrebreather_02";
+												};
+											};
+											class Item65
+											{
+												class data
+												{
+													singleType="STRING";
+													value="bosunderarmorhelmet";
+												};
+											};
+											class Item66
+											{
+												class data
+												{
+													singleType="STRING";
+													value="NCR_green_beret";
+												};
+											};
+											class Item67
+											{
+												class data
+												{
+													singleType="STRING";
+													value="NCR_red_beret";
+												};
+											};
+											class Item68
+											{
+												class data
+												{
+													singleType="STRING";
+													value="NCR_Black_beret";
+												};
+											};
+											class Item69
+											{
+												class data
+												{
+													singleType="STRING";
+													value="riot_gear_armor_helmet_c";
+												};
+											};
+											class Item70
+											{
+												class data
+												{
+													singleType="STRING";
+													value="genolivercap";
+												};
+											};
+											class Item71
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armor_ncr_trooper_helm_mp";
+												};
+											};
+											class Item72
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rangerhat";
+												};
+											};
+											class Item73
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rangerhat_white";
+												};
+											};
+											class Item74
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combat_ranger_helmet";
+												};
+											};
+											class Item75
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combat_ranger_helmet_patron01";
+												};
+											};
+											class Item76
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combat_ranger_helmet_patron03";
+												};
+											};
+											class Item77
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combat_ranger_helmet_winter";
+												};
+											};
+											class Item78
+											{
+												class data
+												{
+													singleType="STRING";
+													value="riot_gear_armor_helmet_c_02";
+												};
+											};
+											class Item79
+											{
+												class data
+												{
+													singleType="STRING";
+													value="riot_gear_armor_helmet_c_03";
+												};
+											};
+											class Item80
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armor_ncr_trooper_helm_02";
+												};
+											};
+											class Item81
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armor_ncr_trooper_helm_winter";
+												};
+											};
+											class Item82
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armor_ncr_trooper_helm";
+												};
+											};
+											class Item83
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armor_ncr_trooper_helm_green";
+												};
+											};
+											class Item84
+											{
+												class data
+												{
+													singleType="STRING";
+													value="eyebot_helmet";
+												};
+											};
+											class Item85
+											{
+												class data
+												{
+													singleType="STRING";
+													value="fiendhelmet";
+												};
+											};
+											class Item86
+											{
+												class data
+												{
+													singleType="STRING";
+													value="fiendhelmet02";
+												};
+											};
+											class Item87
+											{
+												class data
+												{
+													singleType="STRING";
+													value="fiendhelmet03";
+												};
+											};
+											class Item88
+											{
+												class data
+												{
+													singleType="STRING";
+													value="hockeymask";
+												};
+											};
+											class Item89
+											{
+												class data
+												{
+													singleType="STRING";
+													value="helmetmetalarmorm";
+												};
+											};
+											class Item90
+											{
+												class data
+												{
+													singleType="STRING";
+													value="MetArmMIIHelm";
+												};
+											};
+											class Item91
+											{
+												class data
+												{
+													singleType="STRING";
+													value="raiderarmor04_hat";
+												};
+											};
+											class Item92
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Tribalt51b";
+												};
+											};
+											class Item93
+											{
+												class data
+												{
+													singleType="STRING";
+													value="helmetraider03";
+												};
+											};
+											class Item94
+											{
+												class data
+												{
+													singleType="STRING";
+													value="helmetraider02";
+												};
+											};
+											class Item95
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_helm_snow";
+												};
+											};
+											class Item96
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combat_ranger_helmet02";
+												};
+											};
+											class Item97
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Army_Helmet";
+												};
+											};
+											class Item98
+											{
+												class data
+												{
+													singleType="STRING";
+													value="boomer_02_uniform";
+												};
+											};
+											class Item99
+											{
+												class data
+												{
+													singleType="STRING";
+													value="powdergang_02_uniform";
+												};
+											};
+											class Item100
+											{
+												class data
+												{
+													singleType="STRING";
+													value="powdergang_03_uniform";
+												};
+											};
+											class Item101
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylesuit_outfit_benny_uniform";
+												};
+											};
+											class Item102
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_rivetcitysecurity_uniform";
+												};
+											};
+											class Item103
+											{
+												class data
+												{
+													singleType="STRING";
+													value="republican_01_uniform";
+												};
+											};
+											class Item104
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_uniform";
+												};
+											};
+											class Item105
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylesuit_outfit03_uniform";
+												};
+											};
+											class Item106
+											{
+												class data
+												{
+													singleType="STRING";
+													value="lucassimms_ncr_uniform";
+												};
+											};
+											class Item107
+											{
+												class data
+												{
+													singleType="STRING";
+													value="petrochico_01_07_uniform";
+												};
+											};
+											class Item108
+											{
+												class data
+												{
+													singleType="STRING";
+													value="petrochico_01_04_uniform";
+												};
+											};
+											class Item109
+											{
+												class data
+												{
+													singleType="STRING";
+													value="petrochico_01_03_uniform";
+												};
+											};
+											class Item110
+											{
+												class data
+												{
+													singleType="STRING";
+													value="petrochico_01_02_uniform";
+												};
+											};
+											class Item111
+											{
+												class data
+												{
+													singleType="STRING";
+													value="petrochico_01_05_uniform";
+												};
+											};
+											class Item112
+											{
+												class data
+												{
+													singleType="STRING";
+													value="petrochico_01_06_uniform";
+												};
+											};
+											class Item113
+											{
+												class data
+												{
+													singleType="STRING";
+													value="republican_02_uniform";
+												};
+											};
+											class Item114
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylesuit_outfit01_uniform";
+												};
+											};
+											class Item115
+											{
+												class data
+												{
+													singleType="STRING";
+													value="jgraham_uniform";
+												};
+											};
+											class Item116
+											{
+												class data
+												{
+													singleType="STRING";
+													value="leatherarmor_01_uniform";
+												};
+											};
+											class Item117
+											{
+												class data
+												{
+													singleType="STRING";
+													value="power_armor_t45d_pink_uniform";
+												};
+											};
+											class Item118
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylecasual01_uniform";
+												};
+											};
+											class Item119
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylecasual01_mold_uniform";
+												};
+											};
+											class Item120
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylecasual04_uniform";
+												};
+											};
+											class Item121
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylecasual04_mold_uniform";
+												};
+											};
+											class Item122
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylecasual02_uniform";
+												};
+											};
+											class Item123
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylecasual02_mold_uniform";
+												};
+											};
+											class Item124
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylecasual03_mold_uniform";
+												};
+											};
+											class Item125
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylecasual03_uniform";
+												};
+											};
+											class Item126
+											{
+												class data
+												{
+													singleType="STRING";
+													value="republican_04_uniform";
+												};
+											};
+											class Item127
+											{
+												class data
+												{
+													singleType="STRING";
+													value="radiationsuit_uniform";
+												};
+											};
+											class Item128
+											{
+												class data
+												{
+													singleType="STRING";
+													value="wastelandmerchant01_uniform";
+												};
+											};
+											class Item129
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_rileysranger_uniform";
+												};
+											};
+											class Item130
+											{
+												class data
+												{
+													singleType="STRING";
+													value="sm_power_armor_uniform";
+												};
+											};
+											class Item131
+											{
+												class data
+												{
+													singleType="STRING";
+													value="republican_03_uniform";
+												};
+											};
+											class Item132
+											{
+												class data
+												{
+													singleType="STRING";
+													value="lucassimms_uniform";
+												};
+											};
+											class Item133
+											{
+												class data
+												{
+													singleType="STRING";
+													value="stealthsuit_uniform";
+												};
+											};
+											class Item134
+											{
+												class data
+												{
+													singleType="STRING";
+													value="stealthsuit_02_uniform";
+												};
+											};
+											class Item135
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_taloncompanym_uniform";
+												};
+											};
+											class Item136
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_usmilitary_uniform";
+												};
+											};
+											class Item137
+											{
+												class data
+												{
+													singleType="STRING";
+													value="wasteland_doctor_01_uniform";
+												};
+											};
+											class Item138
+											{
+												class data
+												{
+													singleType="STRING";
+													value="wastelandsettler03_uniform";
+												};
+											};
+											class Item139
+											{
+												class data
+												{
+													singleType="STRING";
+													value="wasteland_doctor_02_uniform";
+												};
+											};
+											class Item140
+											{
+												class data
+												{
+													singleType="STRING";
+													value="wastelandsettler02_uniform";
+												};
+											};
+											class Item141
+											{
+												class data
+												{
+													singleType="STRING";
+													value="caesar_uniform";
+												};
+											};
+											class Item142
+											{
+												class data
+												{
+													singleType="STRING";
+													value="centurion_uniform";
+												};
+											};
+											class Item143
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionexplorer_uniform";
+												};
+											};
+											class Item144
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionprime_uniform";
+												};
+											};
+											class Item145
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionpretorian_uniform";
+												};
+											};
+											class Item146
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legate_armor_uniform";
+												};
+											};
+											class Item147
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legion_recruit_uniform";
+												};
+											};
+											class Item148
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionveteran_uniform";
+												};
+											};
+											class Item149
+											{
+												class data
+												{
+													singleType="STRING";
+													value="legionvexillarius_uniform";
+												};
+											};
+											class Item150
+											{
+												class data
+												{
+													singleType="STRING";
+													value="chinesecommando_general_uniform";
+												};
+											};
+											class Item151
+											{
+												class data
+												{
+													singleType="STRING";
+													value="chinesecommando_02_uniform";
+												};
+											};
+											class Item152
+											{
+												class data
+												{
+													singleType="STRING";
+													value="chinesecommando_03_uniform";
+												};
+											};
+											class Item153
+											{
+												class data
+												{
+													singleType="STRING";
+													value="chinesecommando_uniform";
+												};
+											};
+											class Item154
+											{
+												class data
+												{
+													singleType="STRING";
+													value="chinesestealtharmor_uniform";
+												};
+											};
+											class Item155
+											{
+												class data
+												{
+													singleType="STRING";
+													value="chinesestealtharmor_invis_uniform";
+												};
+											};
+											class Item156
+											{
+												class data
+												{
+													singleType="STRING";
+													value="colonelautumn_uniform";
+												};
+											};
+											class Item157
+											{
+												class data
+												{
+													singleType="STRING";
+													value="colonelautumn_enclave_uniform";
+												};
+											};
+											class Item158
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_enclave_uniform";
+												};
+											};
+											class Item159
+											{
+												class data
+												{
+													singleType="STRING";
+													value="engineer_enclave_black_uniform";
+												};
+											};
+											class Item160
+											{
+												class data
+												{
+													singleType="STRING";
+													value="enclave_officer_uniform";
+												};
+											};
+											class Item161
+											{
+												class data
+												{
+													singleType="STRING";
+													value="enclave_officer2_uniform";
+												};
+											};
+											class Item162
+											{
+												class data
+												{
+													singleType="STRING";
+													value="radiationsuit_enclave_uniform";
+												};
+											};
+											class Item163
+											{
+												class data
+												{
+													singleType="STRING";
+													value="recruit_enclave_uniform";
+												};
+											};
+											class Item164
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Army_Fatigues_enc_01_uniform";
+												};
+											};
+											class Item165
+											{
+												class data
+												{
+													singleType="STRING";
+													value="enclave_presidentsuitm_uniform";
+												};
+											};
+											class Item166
+											{
+												class data
+												{
+													singleType="STRING";
+													value="arcadesdoctor_uniform";
+												};
+											};
+											class Item167
+											{
+												class data
+												{
+													singleType="STRING";
+													value="khan_great_01_uniform";
+												};
+											};
+											class Item168
+											{
+												class data
+												{
+													singleType="STRING";
+													value="kings_outfit_uniform";
+												};
+											};
+											class Item169
+											{
+												class data
+												{
+													singleType="STRING";
+													value="mechanist_uniform";
+												};
+											};
+											class Item170
+											{
+												class data
+												{
+													singleType="STRING";
+													value="ncr_Boone_02_uniform";
+												};
+											};
+											class Item171
+											{
+												class data
+												{
+													singleType="STRING";
+													value="boone_02_Patron_uniform";
+												};
+											};
+											class Item172
+											{
+												class data
+												{
+													singleType="STRING";
+													value="boone_02_Patron_Texas_uniform";
+												};
+											};
+											class Item173
+											{
+												class data
+												{
+													singleType="STRING";
+													value="boone02_winter_uniform";
+												};
+											};
+											class Item174
+											{
+												class data
+												{
+													singleType="STRING";
+													value="riot_gear_armor_outfit_c_uniform";
+												};
+											};
+											class Item175
+											{
+												class data
+												{
+													singleType="STRING";
+													value="petrochico_01_01_uniform";
+												};
+											};
+											class Item176
+											{
+												class data
+												{
+													singleType="STRING";
+													value="generaloliver_uniform";
+												};
+											};
+											class Item177
+											{
+												class data
+												{
+													singleType="STRING";
+													value="1950stylesuit_outfit02_uniform";
+												};
+											};
+											class Item178
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combat_ranger_uniform";
+												};
+											};
+											class Item179
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combat_ranger_winter_uniform";
+												};
+											};
+											class Item180
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combat_ranger_snow_uniform";
+												};
+											};
+											class Item181
+											{
+												class data
+												{
+													singleType="STRING";
+													value="nv_ranger_uniform";
+												};
+											};
+											class Item182
+											{
+												class data
+												{
+													singleType="STRING";
+													value="nv_rangerm_winter_uniform";
+												};
+											};
+											class Item183
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armor_ncr_trooper_01_uniform";
+												};
+											};
+											class Item184
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armor_ncr_trooper_patron_02_uniform";
+												};
+											};
+											class Item185
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armor_ncr_trooper_patron_01_uniform";
+												};
+											};
+											class Item186
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armor_ncr_trooper_01_winter_uniform";
+												};
+											};
+											class Item187
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armornvncrtrooper_plain_uniform";
+												};
+											};
+											class Item188
+											{
+												class data
+												{
+													singleType="STRING";
+													value="armornvncrtrooper_plain_winter_uniform";
+												};
+											};
+											class Item189
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Armored_Coat_uniform";
+												};
+											};
+											class Item190
+											{
+												class data
+												{
+													singleType="STRING";
+													value="wastelandclothing03_uniform";
+												};
+											};
+											class Item191
+											{
+												class data
+												{
+													singleType="STRING";
+													value="wastelandclothing01_uniform";
+												};
+											};
+											class Item192
+											{
+												class data
+												{
+													singleType="STRING";
+													value="metalarmor_uniform";
+												};
+											};
+											class Item193
+											{
+												class data
+												{
+													singleType="STRING";
+													value="wasteland_clothing_05_uniform";
+												};
+											};
+											class Item194
+											{
+												class data
+												{
+													singleType="STRING";
+													value="raiderarmor03_uniform";
+												};
+											};
+											class Item195
+											{
+												class data
+												{
+													singleType="STRING";
+													value="raiderarmor03_Black_uniform";
+												};
+											};
+											class Item196
+											{
+												class data
+												{
+													singleType="STRING";
+													value="raiderarmor04_uniform";
+												};
+											};
+											class Item197
+											{
+												class data
+												{
+													singleType="STRING";
+													value="raiderarmor04_Black_uniform";
+												};
+											};
+											class Item198
+											{
+												class data
+												{
+													singleType="STRING";
+													value="raiderarmor02_uniform";
+												};
+											};
+											class Item199
+											{
+												class data
+												{
+													singleType="STRING";
+													value="raiderarmor02_Black_uniform";
+												};
+											};
+											class Item200
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Army_Fatigues_uniform";
+												};
+											};
+											class Item201
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_snow_uniform";
+												};
+											};
+											class Item202
+											{
+												class data
+												{
+													singleType="STRING";
+													value="female_snowcombatarmor_uniform";
+												};
+											};
+											class Item203
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combat_ranger03_uniform";
+												};
+											};
+											class Item204
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combat_ranger02_uniform";
+												};
+											};
+											class Item205
+											{
+												class data
+												{
+													singleType="STRING";
+													value="combatarmor_snow_med_uniform";
+												};
+											};
+											class Item206
+											{
+												class data
+												{
+													singleType="STRING";
+													value="tunnelsnake_uniform";
+												};
+											};
+											class Item207
+											{
+												class data
+												{
+													singleType="STRING";
+													value="vaultsuitutility_uniform";
+												};
+											};
+											class Item208
+											{
+												class data
+												{
+													singleType="STRING";
+													value="vaultsuitutility13_uniform";
+												};
+											};
+											class Item209
+											{
+												class data
+												{
+													singleType="STRING";
+													value="vault_101_uniform";
+												};
+											};
+											class Item210
+											{
+												class data
+												{
+													singleType="STRING";
+													value="vault_111_uniform";
+												};
+											};
+											class Item211
+											{
+												class data
+												{
+													singleType="STRING";
+													value="vault_114_uniform";
+												};
+											};
+											class Item212
+											{
+												class data
+												{
+													singleType="STRING";
+													value="vault_118_uniform";
+												};
+											};
+											class Item213
+											{
+												class data
+												{
+													singleType="STRING";
+													value="vault_75_uniform";
+												};
+											};
+											class Item214
+											{
+												class data
+												{
+													singleType="STRING";
+													value="vault_88_uniform";
+												};
+											};
+											class Item215
+											{
+												class data
+												{
+													singleType="STRING";
+													value="vault_81_uniform";
+												};
+											};
+											class Item216
+											{
+												class data
+												{
+													singleType="STRING";
+													value="vault_95_uniform";
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0;
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item81
 		{
