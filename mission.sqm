@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=68;
+		nextID=71;
 	};
 	class Camera
 	{
@@ -27,7 +27,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="meleeArena";
+sourceName="Melee_Arena";
 addons[]=
 {
 	"AM_Items",
@@ -127,6 +127,10 @@ randomSeed=10903598;
 class ScenarioData
 {
 	author="JarasonPC";
+	wreckRemovalMaxTime=3600;
+	corpseManagerMode=1;
+	corpseLimit=0;
+	corpseRemovalMaxTime=20;
 };
 class Mission
 {
