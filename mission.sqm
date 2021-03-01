@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=56;
+		nextID=62;
 	};
 	class Camera
 	{
-		pos[]={3943.917,33.725975,4857.1475};
-		dir[]={0.25987554,-0.51458836,0.81710905};
-		up[]={0.15596287,0.85743648,0.49038416};
-		aside[]={0.95296437,-1.3425597e-007,-0.3030836};
+		pos[]={3990.0784,8.9690924,4901.0869};
+		dir[]={0.88510603,-0.46133238,0.061575394};
+		up[]={0.46023118,0.88722134,0.032017861};
+		aside[]={0.069403052,1.5880505e-007,-0.99760437};
 	};
 };
 binarizationWanted=0;
-sourceName="swordsAndSandals";
+sourceName="Melee_Arena";
 addons[]=
 {
 	"AM_Items",
@@ -127,6 +127,10 @@ randomSeed=10903598;
 class ScenarioData
 {
 	author="JarasonPC";
+	wreckRemovalMaxTime=3600;
+	corpseManagerMode=1;
+	corpseLimit=0;
+	corpseRemovalMaxTime=20;
 };
 class Mission
 {
@@ -2135,6 +2139,7 @@ class Mission
 					class Attributes
 					{
 						description="Fighter";
+						isPlayer=1;
 						isPlayable=1;
 						class Inventory
 						{
