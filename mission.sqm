@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=53;
+		nextID=56;
 	};
 	class Camera
 	{
-		pos[]={3972.2256,16.143805,4910.4971};
-		dir[]={0.81970674,-0.44986802,-0.35482758};
-		up[]={0.41285628,0.89307451,-0.1787121};
-		aside[]={-0.39728814,-6.0086313e-007,-0.91780382};
+		pos[]={3943.917,33.725975,4857.1475};
+		dir[]={0.25987554,-0.51458836,0.81710905};
+		up[]={0.15596287,0.85743648,0.49038416};
+		aside[]={0.95296437,-1.3425597e-007,-0.3030836};
 	};
 };
 binarizationWanted=0;
-sourceName="Melee_Arena";
+sourceName="swordsAndSandals";
 addons[]=
 {
 	"AM_Items",
@@ -39,6 +39,7 @@ addons[]=
 	"A3_Characters_F",
 	"A3_Weapons_F",
 	"fallout_uniform_02",
+	"IA_Armour_Patch_Aftermath",
 	"A3_Ui_F",
 	"A3_Structures_F_EPA_Walls"
 };
@@ -46,7 +47,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=10;
+		items=11;
 		class Item0
 		{
 			className="AM_Items";
@@ -101,12 +102,19 @@ class AddonsMetaData
 		};
 		class Item8
 		{
+			className="IA_Armour_Patch_Aftermath";
+			name="Fallout uniform #02 Ace Patch by Irish Ace";
+			author="The Irish Ace";
+			url="https://steamcommunity.com/id/sterben_top";
+		};
+		class Item9
+		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item10
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
@@ -3469,7 +3477,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{0 = [""AmmoboxInit"", [this, false]] spawn BIS_fnc_arsenal;}";
 				name="arsenal_npc";
 				dynamicSimulation=1;
 			};

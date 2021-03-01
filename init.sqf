@@ -1,17 +1,11 @@
 lastDamageTime = 0;
 
-private _items = parseSimpleArray loadFile "arsenalItems\items.sqf";
-private _weapons = parseSimpleArray loadFile "arsenalItems\weapons.sqf";
-
 if (hasInterface) then {
 	waitUntil {!isnull player};
 	player setCustomAimCoef 0.1;
 	player enableFatigue false;
 	player enableStamina false;
 	remoteExec ["MeleeArena_fnc_eventOnFightEnd", player];
-
-	[arsenal_npc, _items, true] call BIS_fnc_addVirtualItemCargo;
-	[arsenal_npc, _weapons, true] call BIS_fnc_addVirtualWeaponCargo;
 };
 enableEnvironment[false, true];
 if(isServer) then {
@@ -20,7 +14,6 @@ if(isServer) then {
 	
 	private _meleeArenaSpawn1Marker = "meleeArenaSpawn1";
 	private _meleeArenaSpawn2Marker = "meleeArenaSpawn2";
-	
 	[
 		_meleeArenaSpawn1Marker,
 		_meleeArenaSpawn2Marker

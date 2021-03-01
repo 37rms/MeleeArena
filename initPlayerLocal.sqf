@@ -77,7 +77,7 @@ playSoundOnUnit = {
 		sleep 5; // at least the length of your sound
 		deleteVehicle _this;
 	};
-}
+};
 
 player addEventHandler ["HandleDamage", {
 	params ["_unit", "_selection", "_damage", "_hitIndex", "_hitPoint", "_shooter", "_projectile"];
@@ -108,5 +108,5 @@ player setVariable ["isInArena", false];
 player setVariable ["actionRegisterUnregisterId", -1];
 player setVariable ["buttonCheckedLastTime", 0];
 call MeleeArena_fnc_updatePlayerListDisplay;
-[missionNamespace, "arsenalOpened", MeleeArena_fnc_eventOnArsenalOpen] call BIS_fnc_addScriptedEventHandler;
-[missionNamespace, "arsenalClosed", MeleeArena_fnc_eventOnArsenalClose] call BIS_fnc_addScriptedEventHandler;
+["ace_arsenal_displayOpened", MeleeArena_fnc_eventOnArsenalOpen] call CBA_fnc_addEventHandler;
+["ace_arsenal_displayClosed", MeleeArena_fnc_eventOnArsenalClose] call CBA_fnc_addEventHandler; 

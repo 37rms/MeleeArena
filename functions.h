@@ -2,33 +2,39 @@ class MeleeArena
 {
 	class InitializationFunctions
 	{
-		class initArena {file="functions\fn_initArena.sqf";};
-		class initFight {file="functions\fn_initFight.sqf";};
+		file="functions";
+		class initArena {};
+		class initFight {};
 	};
 	class RegistrationFunctions
 	{
-		class registerPlayer {file="functions\fn_registerPlayer.sqf";};
-		class unregisterPlayer {file="functions\fn_unregisterPlayer.sqf";};
-		class showRegisterAction {file="functions\fn_showRegisterAction.sqf";};
+		file="functions";
+		class registerPlayer {};
+		class unregisterPlayer {};
+		class showRegisterAction {};
 	};
 	class EventFunctions
 	{
-		class eventOnArsenalOpen {file="functions\fn_eventOnArsenalOpen.sqf";};
-		class eventOnArsenalClose {file="functions\fn_eventOnArsenalClose.sqf";};
-		class eventOnFightBegin {file="functions\fn_eventOnFightBegin.sqf";};
-		class eventOnFightEnd {file="functions\fn_eventOnFightEnd.sqf";};
+		file="functions";
+		class eventOnArsenalOpen {};
+		class eventOnArsenalClose {};
+		class eventOnFightBegin {};
+		class eventOnFightEnd {};
 	};
 	class ListFunctions
 	{
-		class addPlayerToList {file="functions\fn_addPlayerToList.sqf";};
-		class removePlayerFromList {file="functions\fn_removePlayerFromList.sqf";};
+		file="functions";
+		class addPlayerToList {};
+		class removePlayerFromList {};
 	};
 	class DisplayFunctions
 	{
-		class updatePlayerListDisplay {file="functions\fn_updatePlayerListDisplay.sqf";};
+		file="functions";
+		class updatePlayerListDisplay {};
 	};
 	class DrawFunctions
 	{
-		class drawIconAbovePlayers {file="functions\fn_drawIconAbovePlayers.sqf";};
+		file="functions";
+		class drawIconAbovePlayers {};
 	};
 };
