@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=71;
+		nextID=77;
 	};
 	class Camera
 	{
-		pos[]={3967.4939,28.282349,4825.501};
-		dir[]={0.17584501,-0.59509736,0.78418237};
-		up[]={0.13021153,0.80365294,0.58067787};
-		aside[]={0.97576958,5.4824341e-008,-0.21880673};
+		pos[]={3968.427,13.152623,4907.2109};
+		dir[]={0.15269791,-0.23585871,0.95972431};
+		up[]={0.037062012,0.97178513,0.23293585};
+		aside[]={0.9875859,-3.9784936e-008,-0.15713112};
 	};
 };
 binarizationWanted=0;
@@ -131,6 +131,103 @@ class ScenarioData
 	corpseManagerMode=1;
 	corpseLimit=0;
 	corpseRemovalMaxTime=20;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hash";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								singleType="STRING";
+								value="#CBA_HASH#";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=1;
+									class Item0
+									{
+										class data
+										{
+											singleType="STRING";
+											value="ace_nametags_playernamesviewdistance";
+										};
+									};
+								};
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								singleType="ARRAY";
+								class value
+								{
+									items=1;
+									class Item0
+									{
+										class data
+										{
+											singleType="ARRAY";
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=4;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														singleType="SCALAR";
+														value=1;
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								nil=1;
+								singleType="ANY";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
