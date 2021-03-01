@@ -1,4 +1,4 @@
-player setDamage 0;
+[objNull, player] call ace_medical_treatment_fnc_fullHeal;
 private _chosenWeapon = handgunWeapon player;
 player removeWeapon _chosenWeapon;
 private _chosenHmd = hmd player;
