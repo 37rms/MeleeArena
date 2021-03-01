@@ -8,6 +8,11 @@ class CfgSounds
 	#include "cfgSounds.hpp"
 };
 
+class CfgMeleeArena
+{
+	#include "cfgArsenal.hpp"
+};
+
 author = "JarasonPC & shawneeo & Nicer";
 briefingName = "Melee Arena";
 onLoadName = "Melee Arena";

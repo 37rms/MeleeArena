@@ -1,21 +1,21 @@
 class MeleeArena
 {
-	class InitializationFunctions
+	class InitFunctions
 	{
-		file="functions";
+		file="functions\init";
 		class initArena {};
 		class initFight {};
 	};
 	class RegistrationFunctions
 	{
-		file="functions";
+		file="functions\registration";
 		class registerPlayer {};
 		class unregisterPlayer {};
 		class showRegisterAction {};
 	};
 	class EventFunctions
 	{
-		file="functions";
+		file="functions\event";
 		class eventOnArsenalOpen {};
 		class eventOnArsenalClose {};
 		class eventOnFightBegin {};
@@ -23,18 +23,23 @@ class MeleeArena
 	};
 	class ListFunctions
 	{
-		file="functions";
+		file="functions\list";
 		class addPlayerToList {};
 		class removePlayerFromList {};
 	};
 	class DisplayFunctions
 	{
-		file="functions";
+		file="functions\display";
 		class updatePlayerListDisplay {};
 	};
 	class DrawFunctions
 	{
-		file="functions";
+		file="functions\draw";
 		class drawIconAbovePlayers {};
+	};
+	class ConfigFunctions
+	{
+		file="functions\config";
+		class getConfigArsenalEntry {};
 	};
 };

@@ -1,15 +1,12 @@
+private _chosenWeapon = objNull;
 if(isNil{player getVariable "chosenWeapon"}) then {
-	private _chosenWeapon = "AM_WBK_ChinOfSword";
+	private _weapons = "weapons" call MeleeArena_fnc_getConfigArsenalEntry;
+	_chosenWeapon = selectRandom _weapons;
 }
 else{
-	private _chosenWeapon = player getVariable "chosenWeapon";
-	player addWeapon _chosenWeapon;
-	//TODO: REMOVE
-	private _magazines = getArray (configFile >> "CfgWeapons" >> _chosenWeapon >> "magazines");
-	private _magazine = _magazines select 0;
-	player addMagazine _magazine;
-	player addHandgunItem _magazine;
+	_chosenWeapon = player getVariable "chosenWeapon";
 };
+player addWeapon _chosenWeapon;
 if(isNil{player getVariable "chosenHmd"}) then {
 	private _chosenHmd = nil;
 }
