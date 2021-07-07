@@ -4,10 +4,9 @@ waituntil {!isnull (finddisplay 46)};
 sleep 6;
 [getPlayerUID player] remoteExec ["MeleeArena_fnc_addPlayerToList", 2];
 setHitOrDeflect = {
-_unit = _this select 0;
-_unitToPlay = _this select 1;
-_animation = _this select 2;
-_IMS_playerTargetTrigger = createTrigger ["EmptyDetector", getPosATL _unitToPlay, false]; 
+	params["_unit", "_unitToPlay", "_animation"];
+
+private _IMS_playerTargetTrigger = createTrigger ["EmptyDetector", getPosATL _unitToPlay, false]; 
 _IMS_playerTargetTrigger setTriggerArea [0.9, 1.7, 0, true]; 
 _IMS_playerTargetTrigger attachTo [_unitToPlay, [0,0.8,0]];
 { 
